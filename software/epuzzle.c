@@ -20,7 +20,7 @@ int8_t dx[] = { 0,  1,  0, -1};
 
 struct field {
   uint8_t state[ROW][COLUMN];
-  int8_t cmd;
+  uint8_t cmd;
   uint16_t prev_index;
 };
 
@@ -29,7 +29,7 @@ uint16_t field_length = 0;
 
 struct field TARGET_FIELD = {
   .state = {1, 2, 3, 4, 5, 0},
-  .cmd = -1,
+  .cmd = 255,
   .prev_index = 0,
 };
 
@@ -55,25 +55,25 @@ static inline void set_field(uint16_t index, uint8_t state[ROW][COLUMN], uint8_t
  * If moving blank success, it returns 1.
  * Else, it returns 0.
  */ 
-static inline uint8_t move(uint16_t prev_index, int8_t cmd)
+static inline uint8_t move(uint16_t prev_index, uint8_t cmd)
 {
-  int8_t blank_x = 0, blank_y = 0;
+  uint8_t blank_x = 0, blank_y = 0;
   uint16_t new_index = field_length;
 
-  for (int8_t y = 0; y < ROW; y++) {
-    for (int8_t x = 0; x < COLUMN; x++) {
+  for (uint8_t y = 0; y < ROW; y++) {
+    for (uint8_t x = 0; x < COLUMN; x++) {
       if (fields[prev_index].state[y][x] == 0) {
         blank_x = x;
         blank_y = y;
       }
     }
   }
-  int8_t next_x = blank_x + dx[cmd];
-  int8_t next_y = blank_y + dy[cmd];
+  uint8_t next_x = blank_x + dx[cmd];
+  uint8_t next_y = blank_y + dy[cmd];
 
-  if ((next_x < 0) || (next_x > COLUMN - 1))
+  if (next_x > COLUMN - 1)
     return 0;
-  if ((next_y < 0) || (next_y > ROW - 1))
+  if (next_y > ROW - 1)
     return 0;
   set_field(new_index, fields[prev_index].state, cmd, prev_index);
   fields[new_index].state[blank_y][blank_x] = fields[new_index].state[next_y][next_x];
