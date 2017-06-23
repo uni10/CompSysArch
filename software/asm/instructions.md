@@ -27,3 +27,60 @@
 | addi | 59 | add |
 
 
+`6f387b0dd24e07fd6b6fb9b660eec0981850e9fb`
+
+| instruction | frequency | category |
+|:---|:---:|:---|
+| blt | 1 | |
+| ret | 2 | |
+| sltiu | 2 | |
+| xor | 2 | |
+| bltu | 3 | |
+| bgeu | 3 | |
+| srli | 3 | |
+| beq | 3 | |
+| slli | 4 | |
+| and | 5 | |
+| lhu | 6 | |
+| j | 7 | |
+| sh | 7 | |
+| andi | 8 | |
+| lui | 8 | |
+| jal | 16 | |
+| sb | 16 | |
+| bne | 18 | |
+| li | 23 | |
+| lbu | 31 | |
+| add | 32 | |
+| sw | 32 | |
+| lw | 35 | |
+| addi | 61 | |
+
+8b300c2
+
+| instruction | frequency | category |
+|:---|:---:|:---|
+| blt | 1 | |
+| bgeu | 1 | |
+| ret | 2 | |
+| sltiu | 2 | |
+| xor | 2 | |
+| srli | 3 | |
+| beq | 3 | |
+| slli | 4 | |
+| and | 5 | |
+| bltu | 5 | |
+| j | 6 | |
+| lhu | 6 | |
+| sh | 7 | |
+| andi | 8 | |
+| lui | 8 | |
+| jal | 16 | |
+| sb | 16 | |
+| bne | 18 | |
+| li | 23 | |
+| lbu | 31 | |
+| add | 32 | |
+| sw | 32 | |
+| lw | 35 | |
+| addi | 60 | |
