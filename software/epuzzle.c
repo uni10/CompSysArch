@@ -5,8 +5,13 @@
 #define FIELDS  720
 
 // #define DEBUG
+// #define TESTING
 
 #ifdef DEBUG
+#include <stdio.h>
+#endif
+
+#ifdef TESTING
 #include <stdio.h>
 #endif
 
@@ -160,7 +165,6 @@ int main()
 {
   uint16_t current = 0;
   uint8_t finished = 0;
-  // uint8_t state[][COLUMN] = {{5, 3}, {0, 4}, {2, 1}};
   uint8_t state[][COLUMN] = {{2, 4}, {5, 3}, {1, 0}};
   set_field(0, state, -1, 0);
   queue[0] = 0;
@@ -210,7 +214,13 @@ int main()
 #ifdef DEBUG
       printf("Log: %2u -> %u\n", i, log[count - i - 1]);
 #endif
+#ifdef TESTING
+      printf("%u ", log[count - i - 1]);
+#endif
     }
+#ifdef TESTING
+    printf("\n");
+#endif
   }
 
   return 0;
