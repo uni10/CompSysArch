@@ -63,7 +63,7 @@ main:
 	lui	x5, %hi(head)
 	addi	x5, x5, %lo(head)
 	lw	x7, 0(x5)
-	bgeu	x7, x31, LBB1_43
+	bgeu	x7, x31, LBB1_42
 	sw	x5, 4(x8)
 	sw	x6, 40(x8)
 	lui	x5, %hi(TARGET_FIELD)
@@ -108,7 +108,7 @@ LBB1_3:
 	sh	x21, 0(x22)
 	addi	x20, x21, 0
 	lw	x12, 48(x8)
-	j	LBB1_40
+	j	LBB1_39
 LBB1_4:
 	addi	x21, x20, 0
 	lbu	x10, 0(x27)
@@ -151,10 +151,7 @@ LBB1_20:
 	lbu	x5, 0(x5)
 	add	x5, x5, x7
 	andi	x29, x5, 255
-	bgeu	x16, x29, LBB1_22
-	addi	x20, x21, 0
-	j	LBB1_40
-LBB1_22:
+	bltu	x16, x29, LBB1_38
 	lui	x5, %hi(dy)
 	addi	x5, x5, %lo(dy)
 	add	x5, x5, x18
@@ -162,10 +159,7 @@ LBB1_22:
 	add	x5, x5, x6
 	andi	x9, x5, 255
 	li	x28, 2
-	bgeu	x28, x9, LBB1_24
-	addi	x20, x21, 0
-	j	LBB1_40
-LBB1_24:
+	bltu	x28, x9, LBB1_38
 	lw	x5, 56(x8)
 	lbu	x20, 0(x5)
 	li	x5, 65535
@@ -204,7 +198,7 @@ LBB1_24:
 	addi	x11, x12, 0
 	jal	x1, __mulsi3
 	add	x9, x13, x10
-	bltu	x23, x28, LBB1_33
+	bltu	x23, x28, LBB1_31
 	li	x11, 10
 	addi	x10, x7, 0
 	jal	x1, __mulsi3
@@ -218,42 +212,42 @@ LBB1_24:
 	lbu	x24, 0(x9)
 	addi	x12, x0, 0
 	addi	x29, x0, 0
-LBB1_26:
+LBB1_24:
 	li	x11, 10
 	addi	x10, x12, 0
 	jal	x1, __mulsi3
 	add	x10, x13, x10
 	lbu	x10, 0(x10)
 	andi	x11, x24, 255
-	bne	x10, x11, LBB1_32
+	bne	x10, x11, LBB1_30
 	li	x11, 10
 	addi	x10, x12, 0
 	jal	x1, __mulsi3
 	add	x10, x13, x10
 	lbu	x10, 1(x10)
 	lbu	x11, 0(x6)
-	bne	x10, x11, LBB1_32
+	bne	x10, x11, LBB1_30
 	li	x11, 10
 	addi	x10, x12, 0
 	jal	x1, __mulsi3
 	add	x10, x13, x10
 	lbu	x10, 2(x10)
 	lbu	x11, 0(x28)
-	bne	x10, x11, LBB1_32
+	bne	x10, x11, LBB1_30
 	li	x11, 10
 	addi	x10, x12, 0
 	jal	x1, __mulsi3
 	add	x10, x13, x10
 	lbu	x10, 3(x10)
 	lbu	x11, 0(x22)
-	bne	x10, x11, LBB1_32
+	bne	x10, x11, LBB1_30
 	li	x11, 10
 	addi	x10, x12, 0
 	jal	x1, __mulsi3
 	add	x10, x13, x10
 	lbu	x10, 4(x10)
 	lbu	x11, 0(x17)
-	bne	x10, x11, LBB1_32
+	bne	x10, x11, LBB1_30
 	li	x11, 10
 	addi	x10, x12, 0
 	jal	x1, __mulsi3
@@ -262,22 +256,22 @@ LBB1_26:
 	lw	x11, 36(x8)
 	lbu	x11, 0(x11)
 	beq	x10, x11, LBB1_3
-LBB1_32:
+LBB1_30:
 	addi	x29, x29, 1
 	and	x12, x29, x5
-	blt	x12, x7, LBB1_26
-LBB1_33:
+	blt	x12, x7, LBB1_24
+LBB1_31:
 	lw	x6, 44(x8)
 	andi	x6, x6, 255
 	lbu	x10, 0(x9)
-	bne	x10, x6, LBB1_39
+	bne	x10, x6, LBB1_37
 	li	x11, 10
 	addi	x10, x7, 0
 	jal	x1, __mulsi3
 	add	x6, x13, x10
 	lbu	x6, 1(x6)
 	lw	x10, 32(x8)
-	bne	x6, x10, LBB1_39
+	bne	x6, x10, LBB1_37
 	li	x11, 10
 	addi	x10, x7, 0
 	jal	x1, __mulsi3
@@ -285,14 +279,14 @@ LBB1_33:
 	lbu	x6, 2(x6)
 	lw	x10, 24(x8)
 	andi	x10, x10, 255
-	bne	x6, x10, LBB1_39
+	bne	x6, x10, LBB1_37
 	li	x11, 10
 	addi	x10, x7, 0
 	jal	x1, __mulsi3
 	add	x6, x13, x10
 	lbu	x6, 3(x6)
 	lw	x10, 16(x8)
-	bne	x6, x10, LBB1_39
+	bne	x6, x10, LBB1_37
 	li	x11, 10
 	addi	x10, x7, 0
 	jal	x1, __mulsi3
@@ -300,15 +294,15 @@ LBB1_33:
 	lbu	x6, 4(x6)
 	lw	x10, 12(x8)
 	andi	x10, x10, 255
-	bne	x6, x10, LBB1_39
+	bne	x6, x10, LBB1_37
 	li	x11, 10
 	addi	x10, x7, 0
 	jal	x1, __mulsi3
 	add	x6, x13, x10
 	lbu	x6, 5(x6)
 	lw	x7, 8(x8)
-	beq	x6, x7, LBB1_44
-LBB1_39:
+	beq	x6, x7, LBB1_43
+LBB1_37:
 	add	x5, x23, x5
 	addi	x6, x31, 255
 	andi	x6, x6, 255
@@ -320,14 +314,17 @@ LBB1_39:
 	lw	x5, 40(x8)
 	sw	x31, 0(x5)
 	lw	x22, 52(x8)
-LBB1_40:
+	j	LBB1_39
+LBB1_38:
+	addi	x20, x21, 0
+LBB1_39:
 	addi	x18, x18, 1
 	bltu	x18, x15, LBB1_4
 	lw	x7, 28(x8)
 	bltu	x7, x31, LBB1_2
 	lw	x5, 4(x8)
 	sw	x7, 0(x5)
-LBB1_43:
+LBB1_42:
 	addi	x10, x0, 0
 	add	x2, x8, x0
 	lw	x9, 76(x2)
@@ -345,22 +342,22 @@ LBB1_43:
 	lw	x1, 124(x2)
 	addi	x2, x2, 128
 	ret
-LBB1_44:
+LBB1_43:
 	lw	x6, 4(x8)
 	lw	x7, 28(x8)
 	sw	x7, 0(x6)
 	add	x7, x23, x5
 	and	x6, x7, x5
-	beq	x6, x0, LBB1_43
+	beq	x6, x0, LBB1_42
 	li	x6, 10
-LBB1_46:
+LBB1_45:
 	and	x10, x7, x5
 	addi	x11, x6, 0
 	jal	x1, __mulsi3
 	add	x7, x13, x10
 	lhu	x7, 8(x7)
-	bne	x7, x0, LBB1_46
-	j	LBB1_43
+	bne	x7, x0, LBB1_45
+	j	LBB1_42
 Lfunc_end1:
 	.size	main, Lfunc_end1-main
 

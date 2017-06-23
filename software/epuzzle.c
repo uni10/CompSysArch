@@ -71,10 +71,21 @@ static inline uint8_t move(uint16_t prev_index, uint8_t cmd)
   uint8_t next_x = blank_x + dx[cmd];
   uint8_t next_y = blank_y + dy[cmd];
 
-  if (next_x > COLUMN - 1)
-    return 0;
-  if (next_y > ROW - 1)
-    return 0;
+  switch(next_x) {
+    case 0:
+    case 1:
+      break;
+    default:
+      return 0;
+  }
+  switch(next_y) {
+    case 0:
+    case 1:
+    case 2:
+      break;
+    default:
+      return 0;
+  }
   set_field(new_index, fields[prev_index].state, cmd, prev_index);
   fields[new_index].state[blank_y][blank_x] = fields[new_index].state[next_y][next_x];
   fields[new_index].state[next_y][next_x] = 0;
