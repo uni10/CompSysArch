@@ -89,22 +89,23 @@ http://www.cs.uwm.edu/classes/cs215/TAL_instructions.html
 
 | instruction | frequency | category |
 |:---|:---:|:---|
-| blez | 1 | |
-| bltz | 2 | |
-| jr | 2 | |
-| or | 2 | |
+| bge | 1 | |
+| srli | 2 | |
+| srai | 2 | |
+| sub | 2 | |
+| ret | 2 | |
 | and | 2 | |
-| slt | 2 | |
-| sltu | 2 | |
-| movz | 2 | |
-| beq | 5 | |
-| b | 6 | |
-| sll | 9 | |
-| nop | 10 | |
-| bne | 13 | |
-| addu | 14 | |
-| li | 15 | |
-| move | 17 | |
-| addiu | 28 | |
-| sw | 31 | |
-| lw | 47 | |
+| xor | 2 | |
+| bltu | 2 | |
+| sltiu | 2 | |
+| blt | 4 | |
+| j | 6 | |
+| beq | 6 | |
+| lui | 8 | |
+| li | 9 | |
+| slli | 10 | |
+| bne | 18 | |
+| add | 19 | |
+| addi | 44 | |
+| sw | 51 | |
+| lw | 74 | |
