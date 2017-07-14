@@ -85,7 +85,8 @@
 | lw | 35 | |
 | addi | 60 | |
 
-http://www.cs.uwm.edu/classes/cs215/TAL_instructions.html
+* http://www.bacn.gov.py/pdfs/20120811101634.pdf
+* http://www.cs.uwm.edu/classes/cs215/TAL_instructions.html
 
 | instruction | frequency | category |
 |:---|:---:|:---|
