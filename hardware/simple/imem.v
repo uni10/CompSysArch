@@ -7,10 +7,8 @@ module imem (
 
 	assign rd = mem[a];
 
-	initial
-      begin
+	initial begin
            $readmemh("imem.dat", mem);
     end
-
 
 endmodule

@@ -17,6 +17,4 @@ module dmem (
       begin
            $readmemh("dmem.dat", mem);
     end
-
-
 endmodule
