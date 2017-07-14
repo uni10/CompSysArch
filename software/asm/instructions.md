@@ -84,3 +84,27 @@
 | sw | 32 | |
 | lw | 35 | |
 | addi | 60 | |
+
+http://www.cs.uwm.edu/classes/cs215/TAL_instructions.html
+
+| instruction | frequency | category |
+|:---|:---:|:---|
+| blez | 1 | |
+| bltz | 2 | |
+| jr | 2 | |
+| or | 2 | |
+| and | 2 | |
+| slt | 2 | |
+| sltu | 2 | |
+| movz | 2 | |
+| beq | 5 | |
+| b | 6 | |
+| sll | 9 | |
+| nop | 10 | |
+| bne | 13 | |
+| addu | 14 | |
+| li | 15 | |
+| move | 17 | |
+| addiu | 28 | |
+| sw | 31 | |
+| lw | 47 | |
