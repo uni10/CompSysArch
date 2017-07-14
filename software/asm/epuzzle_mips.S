@@ -42,53 +42,52 @@ main:
 	addiu	$sp,$sp,-56
 	lw	$25,%got(fields)($28)
 	li	$2,2			# 0x2
-	move	$5,$0
 	.cprestore	0
-	li	$14,1			# 0x1
 	sw	$fp,52($sp)
-	li	$13,3			# 0x3
 	sw	$23,48($sp)
 	sw	$22,44($sp)
 	sw	$21,40($sp)
-	li	$21,-2147483648			# 0xffffffff80000000
 	sw	$19,32($sp)
 	sw	$18,28($sp)
-	addiu	$21,$21,255
 	sw	$17,24($sp)
-	li	$18,4			# 0x4
 	sw	$20,36($sp)
 	sw	$16,20($sp)
+	lw	$fp,%got(field_length)($28)
 	sw	$2,0($25)
 	li	$2,4			# 0x4
-	lw	$23,%got(field_length)($28)
-	lw	$22,%got(queue)($28)
 	sw	$2,4($25)
 	li	$2,5			# 0x5
-	sw	$0,8($sp)
+	lw	$21,0($fp)
 	sw	$2,8($25)
 	li	$2,3			# 0x3
-	lw	$fp,0($23)
-	lw	$17,%got(head)($28)
-	lw	$19,%got(tail)($28)
+	lw	$23,%got(queue)($28)
 	sw	$2,12($25)
 	li	$2,1			# 0x1
-	addiu	$fp,$fp,1
-	sw	$0,20($25)
+	addiu	$21,$21,1
 	sw	$2,16($25)
+	li	$22,-2147483648			# 0xffffffff80000000
 	li	$2,-1			# 0xffffffffffffffff
-	sw	$0,28($25)
+	lw	$17,%got(head)($28)
+	lw	$19,%got(tail)($28)
+	sw	$0,8($sp)
+	sw	$0,20($25)
 	sw	$2,24($25)
-	sw	$fp,0($23)
-	sw	$0,0($22)
+	sw	$0,28($25)
+	sw	$21,0($fp)
+	sw	$0,0($23)
+	move	$5,$0
+	addiu	$22,$22,255
+	li	$14,1			# 0x1
+	li	$13,3			# 0x3
+	li	$18,4			# 0x4
 $L3:
 	lw	$2,0($17)
-	move	$10,$fp
 	lw	$3,0($19)
 	slt	$2,$3,$2
 	bne	$2,$0,$L4
-	nop
+	move	$10,$21
 
-$L58:
+$L59:
 	lw	$2,8($sp)
 	bne	$2,$0,$L4
 	nop
@@ -99,28 +98,28 @@ $L58:
 	nop
 
 	lw	$2,0($17)
-	and	$2,$2,$21
-	bltz	$2,$L57
+	and	$2,$2,$22
+	bltz	$2,$L58
 	li	$3,-256			# 0xffffffffffffff00
 
 $L10:
 	sll	$2,$2,2
-	lw	$3,0($17)
-	lw	$12,%got(dx)($28)
-	move	$11,$0
-	addu	$2,$22,$2
-	lw	$15,%got(dy)($28)
-	addiu	$3,$3,1
+	addu	$2,$23,$2
 	lw	$20,0($2)
-	sw	$3,0($17)
+	lw	$2,0($17)
 	sll	$24,$20,5
+	addiu	$2,$2,1
 	addu	$24,$25,$24
+	lw	$12,%got(dx)($28)
+	lw	$15,%got(dy)($28)
+	sw	$2,0($17)
+	move	$11,$0
 	addiu	$16,$24,24
 $L27:
+	move	$6,$24
 	move	$3,$0
 	move	$2,$0
 	move	$4,$0
-	move	$6,$24
 $L13:
 	lw	$7,0($6)
 	beq	$7,$0,$L32
@@ -130,8 +129,8 @@ $L13:
 $L11:
 	lw	$2,4($6)
 	addiu	$6,$6,8
-	movz	$7,$14,$2
 	movz	$3,$4,$2
+	movz	$7,$14,$2
 	addiu	$4,$4,1
 	bne	$4,$13,$L13
 	move	$2,$7
@@ -149,42 +148,42 @@ $L11:
 	nop
 
 	sll	$7,$10,5
-	move	$5,$24
 	addu	$9,$25,$7
 	move	$6,$9
+	move	$5,$24
 $L17:
-	lw	$fp,0($5)
-	addiu	$6,$6,8
+	lw	$21,0($5)
 	addiu	$5,$5,8
-	sw	$fp,-8($6)
-	lw	$fp,-4($5)
+	sw	$21,0($6)
+	lw	$21,-4($5)
+	addiu	$6,$6,8
 	bne	$16,$5,$L17
-	sw	$fp,-4($6)
+	sw	$21,-4($6)
 
 	sll	$5,$10,2
-	addu	$6,$25,$7
 	addu	$4,$5,$4
-	addu	$3,$5,$3
 	sll	$4,$4,1
-	sw	$11,24($6)
-	sll	$5,$3,1
-	sw	$20,28($6)
+	addu	$3,$5,$3
 	addu	$4,$4,$8
-	addu	$2,$5,$2
-	sll	$3,$4,2
+	sll	$3,$3,1
+	sll	$4,$4,2
+	addu	$4,$25,$4
+	addu	$2,$3,$2
 	sll	$2,$2,2
-	addu	$3,$25,$3
+	lw	$3,0($4)
+	addu	$5,$25,$7
 	addu	$2,$25,$2
-	addiu	$fp,$10,1
-	lw	$4,0($3)
-	sw	$4,0($2)
+	sw	$3,0($2)
+	sw	$11,24($5)
+	sw	$20,28($5)
+	addiu	$21,$10,1
 	blez	$10,$L19
-	sw	$0,0($3)
+	sw	$0,0($4)
 
 	addiu	$7,$7,24
 	lw	$6,%got(fields)($28)
-	move	$8,$0
 	addu	$7,$25,$7
+	move	$8,$0
 $L30:
 	move	$2,$9
 	move	$3,$6
@@ -192,19 +191,20 @@ $L20:
 	lw	$5,0($3)
 	lw	$4,0($2)
 	bne	$5,$4,$L21
+	nop
+
+	lw	$4,4($2)
+	lw	$5,4($3)
+	bne	$5,$4,$L21
 	addiu	$2,$2,8
 
-	lw	$5,4($3)
-	lw	$4,-4($2)
-	bne	$5,$4,$L21
+	bne	$7,$2,$L20
 	addiu	$3,$3,8
 
-	bne	$7,$2,$L20
+$L54:
 	li	$5,1			# 0x1
-
 $L14:
 	addiu	$11,$11,1
-$L61:
 	addiu	$12,$12,4
 	bne	$11,$18,$L27
 	addiu	$15,$15,4
@@ -212,16 +212,15 @@ $L61:
 	lw	$2,0($17)
 	lw	$3,0($19)
 	slt	$2,$3,$2
-	beq	$2,$0,$L58
+	beq	$2,$0,$L59
 	nop
 
 $L4:
-	bne	$5,$0,$L59
+	bne	$5,$0,$L60
 	nop
 
 $L7:
 	lw	$2,8($sp)
-	move	$2,$0
 	lw	$fp,52($sp)
 	lw	$23,48($sp)
 	lw	$22,44($sp)
@@ -231,6 +230,7 @@ $L7:
 	lw	$18,28($sp)
 	lw	$17,24($sp)
 	lw	$16,20($sp)
+	move	$2,$0
 	jr	$31
 	addiu	$sp,$sp,56
 
@@ -246,21 +246,20 @@ $L23:
 	lw	$4,0($9)
 	lw	$3,0($2)
 	bne	$4,$3,$L25
+	nop
+
+	lw	$3,4($2)
+	lw	$4,4($9)
+	bne	$4,$3,$L25
 	addiu	$2,$2,8
 
-	lw	$4,4($9)
-	lw	$3,-4($2)
-	bne	$4,$3,$L25
+	bne	$5,$2,$L23
 	addiu	$9,$9,8
 
-	bne	$5,$2,$L23
-	nop
-
 	li	$2,1			# 0x1
-	li	$5,1			# 0x1
 	sw	$2,8($sp)
 	b	$L3
-	nop
+	li	$5,1			# 0x1
 
 $L32:
 	b	$L11
@@ -269,37 +268,35 @@ $L32:
 $L25:
 	lw	$2,0($19)
 	addiu	$2,$2,-1
-	and	$2,$2,$21
-	bltz	$2,$L60
+	and	$2,$2,$22
+	bltz	$2,$L61
 	li	$3,-256			# 0xffffffffffffff00
 
 $L31:
 	lw	$3,0($19)
 	sll	$2,$2,2
-	li	$5,1			# 0x1
-	addu	$2,$22,$2
+	addu	$2,$23,$2
 	addiu	$3,$3,1
 	sw	$10,0($2)
-	move	$10,$fp
 	sw	$3,0($19)
-	b	$L61
-	addiu	$11,$11,1
+	b	$L54
+	move	$10,$21
 
-$L57:
+$L58:
 	addiu	$2,$2,-1
 	or	$2,$2,$3
 	b	$L10
 	addiu	$2,$2,1
 
-$L60:
+$L61:
 	addiu	$2,$2,-1
 	or	$2,$2,$3
 	b	$L31
 	addiu	$2,$2,1
 
-$L59:
+$L60:
 	b	$L7
-	sw	$10,0($23)
+	sw	$10,0($fp)
 
 	.set	macro
 	.set	reorder
