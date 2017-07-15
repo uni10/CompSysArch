@@ -1,6 +1,6 @@
 main:
   move  $sp,$0
-  li  $28,128
+  move  $28,$0
   lw  $12,%got(fields)($28)
   li  $2,2      # 0x2
   lw  $fp,%got(field_length)($28)
