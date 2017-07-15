@@ -10,7 +10,6 @@ class Compile(object):
         self.instructions = []
         self.filename = filename
         self.data_label = data_label
-        tmp = 1
         self.def_instruction = {
             "lw": self.itype,
             "sw": self.itype,
