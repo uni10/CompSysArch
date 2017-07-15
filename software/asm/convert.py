@@ -17,38 +17,49 @@ class Compile(object):
             "add": self.rtype,
             "addi": self.itype,
             "j": self.jtype,
-            "addiu": tmp,
+            "addiu": self.itype,
             "move": self.inst_move,
             "li": self.inst_li,
             "lui": self.itype,
+            "or": self.rtype,
             "ori": self.itype,
-            "addu": tmp,
+            "addu": self.rtype,
             "bne": self.itype,
-            "nop": tmp,
-            "sll": tmp,
-            "b": tmp,
-            "beq": tmp,
-            "or": tmp,
+            "nop": self.inst_nop,
+            "sll": self.rtype,
+            "b": self.inst_b,
+            "beq": self.itype,
             "movz": self.rtype,
-            "slt": tmp,
-            "and": tmp,
-            "sltu": tmp,
-            "jr": tmp,
-            "bltz": tmp,
-            "blez": tmp
+            "slt": self.rtype,
+            "and": self.rtype,
+            "sltu": self.rtype,
+            "jr": self.rtype,
+            "bltz": self.itype,
+            "blez": self.itype
         }
 
         self.opcode_table = {
             "lw": {"opcode": 0b100011},
             "sw": {"opcode": 0b101011},
             "add": {"opcode": 0b000000, "func": 0b100000, "sa": 0b00000},
+            "addu": {"opcode": 0b000000, "func": 0b100001, "sa": 0b00000},
             "addi": {"opcode": 0b001000},
+            "addiu": {"opcode": 0b001001},
+            "or": {"opcode": 0b000000, "func": 0b100101, "sa": 0b00000},
+            "ori": {"opcode": 0b001101},
+            "sll": {"opcode": 0b000000, "func": 0b000000, "rs": 0b00000},
+            "beq": {"opcode": 0b000100},
             "bne": {"opcode": 0b000101},
+            "bltz": {"opcode": 0b000001, "rt": 0b00000},
+            "blez": {"opcode": 0b000110, "rt": 0b00000},
             "j": {"opcode": 0b000010},
             "move": {"opcode": 0b000000, "func": 0b000110, "sa": 0b00000},
             "movz": {"opcode": 0b000000, "func": 0b001010, "sa": 0b00000},
-            "ori": {"opcode": 0b001101},
             "lui": {"opcode": 0b001111},
+            "slt": {"opcode": 0b000000, "func": 0b101010, "sa": 0b00000},
+            "sltu": {"opcode": 0b000000, "func": 0b101011, "sa": 0b00000},
+            "and": {"opcode": 0b000000, "func": 0b100100, "sa": 0b00000},
+            "jr": {"opcode": 0b000000, "func": 0b001000, "sa": 0b00000, "rt": 0b00000, "rd": 0b00000},
         }
 
         self.reg = {"${}".format(i): i for i in range(32)}
@@ -74,17 +85,42 @@ class Compile(object):
             return (1 << length) + num
 
     def rtype(self, inst, counter):
-        inst_info = self.opcode_table[inst[0]]
-        opcode = inst_info["opcode"]
-        func = inst_info["func"]
-        sa = inst_info["sa"]
-        rd = self.reg[inst[1]]
-        rs = self.reg[inst[2]]
-        rt = self.reg[inst[3]]
+        opcode, rs, rt, rd, sa, func = self.decode_rtype(inst, counter)
         print("R-Type: {}".format(inst))
         print("opcode: {}, rs: {}, rt: {}, rd: {}, sa: {}, func: {}".format(opcode, rs, rt, rd, sa, func))
         b_isnt = int("{0:06b}{1:05b}{2:05b}{3:05b}{4:05b}{5:06b}".format(opcode, rs, rt, rd, sa, func), 2)
         self.instructions.append("{0:08x}".format(b_isnt))
+
+    def decode_rtype(self, inst, counter):
+        inst_info = self.opcode_table[inst[0]]
+        opcode = inst_info["opcode"]
+        func = inst_info["func"]
+
+        if "jr" == inst[0]:
+            rt = inst_info["rt"]
+            rd = inst_info["rd"]
+            sa = inst_info["sa"]
+            rs = inst[1]
+        elif "sltu" == inst[0]:
+            sa = inst_info["sa"]
+            rd = self.reg[inst[1]]
+            rs = self.reg[inst[2]]
+            rt = int(inst[3])
+        elif "rs" in inst_info:
+            rs = inst_info["rs"]
+            rd = self.reg[inst[1]]
+            rt = self.reg[inst[2]]
+            sa = int(inst[3])
+        elif "sa" in inst_info:
+            sa = inst_info["sa"]
+            rd = self.reg[inst[1]]
+            rs = self.reg[inst[2]]
+            rt = self.reg[inst[3]]
+        else:
+            print(inst)
+            raise ValueError("Unknown instruction")
+
+        return opcode, rs, rt, rd, sa, func
 
     def itype(self, inst, address):
         inst_info = self.opcode_table[inst[0]]
@@ -100,9 +136,11 @@ class Compile(object):
         if inst[0] == "lw" or inst[0] == "sw":
             target = [x for x in re.split('[()]', inst[2]) if len(x) > 0]
             if target[0] == "%got":
-                return (self.reg[inst[1]], self.reg[target[2]], self.data_label[target[1]])
+                imm = self.data_label[target[1]]
+                return (self.reg[inst[1]], self.reg[target[2]], imm)
             else:
-                return (self.reg[inst[1]], self.reg[target[1]], int(target[0]))
+                imm = self.conv_ngative(int(target[0]), 16)
+                return (self.reg[inst[1]], self.reg[target[1]], imm)
         elif inst[0] == "lui":
             rs = 0
             rt = self.reg[inst[1]]
@@ -111,6 +149,13 @@ class Compile(object):
             rs = self.reg[inst[1]]
             rt = self.reg[inst[2]]
             offset = self.label[inst[3]] - address - 1
+            offset /= 4
+            imm = self.conv_ngative(offset, 16)
+        elif inst[0] == "blez" or inst[0] == "bltz":
+            inst_info = self.opcode_table[inst[0]]
+            rt = inst_info["rt"]
+            rs = self.reg[inst[1]]
+            offset = self.label[inst[2]] - address - 1
             offset /= 4
             imm = self.conv_ngative(offset, 16)
         else:
@@ -134,13 +179,21 @@ class Compile(object):
 
     def inst_li(self, inst, counter):
         imm = self.conv_ngative(int(inst[2], 10), 32)
-        imm_high = imm & (0xFFFF << 16)
+        imm_high = (imm & (0xFFFF << 16)) >> 16
         imm_low = imm & 0xFFFF
+        print("value: {}, {}".format(int(inst[2]), hex(imm)))
         print("high: {}, {}".format(hex(imm_high), imm_high))
         print("low: {}, {}".format(hex(imm_low), imm_low))
         replace_inst = ["lui", inst[1], str(imm_high)]
         self.def_instruction[replace_inst[0]](replace_inst, counter)
         replace_inst = ["ori", inst[1], inst[1], str(imm_low)]
+        self.def_instruction[replace_inst[0]](replace_inst, counter)
+
+    def inst_nop(self, inst, counter):
+        self.instructions.append("{0:08x}".format(0x0))
+
+    def inst_b(self, inst, counter):
+        replace_inst = ["beq", "$0", "$0", inst[1]]
         self.def_instruction[replace_inst[0]](replace_inst, counter)
 
     def run(self):
@@ -164,10 +217,7 @@ class Compile(object):
             if ":" in instruction[0]:
                 continue
             else:
-                try:
-                    self.def_instruction[instruction[0]](instruction, counter)
-                except Exception:
-                    break
+                self.def_instruction[instruction[0]](instruction, counter)
                 counter += 4
 
         for instruction in self.instructions:
