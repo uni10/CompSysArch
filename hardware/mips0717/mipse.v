@@ -19,6 +19,7 @@ wire [`DATA_W-1:0] unsignimm;
 wire [`DATA_W-1:0] pcplus4;
 wire regwrite;
 wire sw_op, beq_op, bne_op, addi_op, lw_op, j_op, jal_op, jr_op, alu_op;
+wire ori_op, lui_op;
 wire slt_op;
 wire zero;
 
@@ -32,6 +33,8 @@ assign lw_op = (opcode == `OP_LW);
 assign alu_op = (opcode == `OP_REG) & (func[5:3] == 3'b100);
 assign addi_op = (opcode == `OP_ADDI);
 assign addiu_op = (opcode == `OP_ADDIU);
+assign ori_op = (opcode == `OP_ORI);
+assign lui_op = (opcode == `OP_LUI);
 assign beq_op = (opcode == `OP_BEQ);
 assign bne_op = (opcode == `OP_BNE);
 assign j_op = (opcode == `OP_J);
@@ -45,11 +48,14 @@ assign blez_op = (opcode == `OP_BLEZ);
 assign sll_op = (opcode == `OP_REG) & (func == `FUNC_SLL);
 assign movz_op = (opcode == `OP_REG) & (func == `FUNC_MOVZ);
 
-assign srcb = (addi_op | lw_op | sw_op  ) ? signimm : 
-				(addiu_op) ? unsignimm : 
+assign srcb = (addi_op | lw_op | sw_op) ? signimm : 
+				lui_op ? {instr[15:0], 16'b0}:
+				(ori_op | addiu_op) ? unsignimm : 
 								writedata;
 
 assign com = (addi_op | addiu_op | lw_op | sw_op) ? `ALU_ADD: 
+			ori_op ? `ALU_OR:
+			lui_op ? `ALU_THB:
 			(beq_op | bne_op | slt_op | sltu_op ) ? `ALU_SUB: func;
 			
 assign movz_en = movz_op & (writedata == 0);
@@ -61,7 +67,7 @@ assign result = slt_op | sltu_op ? {31'b0,aluresult[31]} :
 		lw_op  ? readdata :
 		aluresult;
 
-assign regwrite = lw_op | alu_op | addi_op | addiu_op | jal_op | slt_op | sltu_op | sll_op | movz_en;
+assign regwrite = lw_op | alu_op | addi_op | addiu_op | jal_op | slt_op | sltu_op | sll_op | movz_en | ori_op | lui_op;
 
 assign writereg = jal_op ? 5'b11111: alu_op | slt_op | sltu_op | sll_op | movz_en ? rd : rt;
 
