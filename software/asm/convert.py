@@ -11,6 +11,7 @@ class Compile(object):
         self.filename = filename
         self.data_label = data_label
         self.got = got
+        self.counter = 0
         self.def_instruction = {
             "lw": self.itype,
             "sw": self.itype,
@@ -84,21 +85,25 @@ class Compile(object):
                     break
         return inst_l
 
+    def insert_instruction(self, b_inst):
+        self.instructions.append(b_inst)
+        self.counter += 4
+
     def conv_ngative(self, num, length):
         if num >= 0:
             return num
         else:
             return (1 << length) + num
 
-    def rtype(self, inst, counter):
-        opcode, rs, rt, rd, sa, func = self.decode_rtype(inst, counter)
+    def rtype(self, inst):
+        opcode, rs, rt, rd, sa, func = self.decode_rtype(inst)
         print("R-Type: {}".format(inst))
         print("opcode: {}, rs: {}, rt: {}, rd: {}, sa: {}, func: {}".format(opcode, rs, rt, rd, sa, func))
-        b_isnt = int("{0:06b}{1:05b}{2:05b}{3:05b}{4:05b}{5:06b}".format(opcode, rs, rt, rd, sa, func), 2)
-        print("{0:08x}".format(b_isnt))
-        self.instructions.append("{0:08x}".format(b_isnt))
+        b_inst = int("{0:06b}{1:05b}{2:05b}{3:05b}{4:05b}{5:06b}".format(opcode, rs, rt, rd, sa, func), 2)
+        print("{0:08x}".format(b_inst))
+        self.insert_instruction("{0:08x}".format(b_inst))
 
-    def decode_rtype(self, inst, counter):
+    def decode_rtype(self, inst):
         inst_info = self.opcode_table[inst[0]]
         opcode = inst_info["opcode"]
         func = inst_info["func"]
@@ -129,18 +134,18 @@ class Compile(object):
 
         return opcode, rs, rt, rd, sa, func
 
-    def itype(self, inst, address):
+    def itype(self, inst):
         inst_info = self.opcode_table[inst[0]]
         opcode = inst_info["opcode"]
-        rt, rs, offset = self.decode_itype(inst, address)
+        rt, rs, offset = self.decode_itype(inst)
 
         print("I-Type: {}".format(inst))
         print("rs: {}, rt: {}, offset: {}".format(rs, rt, offset))
-        b_isnt = int("{0:06b}{1:05b}{2:05b}{3:016b}".format(opcode, rs, rt, offset), 2)
-        print("{0:08x}".format(b_isnt))
-        self.instructions.append("{0:08x}".format(b_isnt))
+        b_inst = int("{0:06b}{1:05b}{2:05b}{3:016b}".format(opcode, rs, rt, offset), 2)
+        print("{0:08x}".format(b_inst))
+        self.insert_instruction("{0:08x}".format(b_inst))
 
-    def decode_itype(self, inst, address):
+    def decode_itype(self, inst):
         if inst[0] == "lw" or inst[0] == "sw":
             target = [x for x in re.split('[()]', inst[2]) if len(x) > 0]
             if target[0] == "%got":
@@ -156,15 +161,17 @@ class Compile(object):
         elif inst[0] == "beq" or inst[0] == "bne":
             rs = self.reg[inst[1]]
             rt = self.reg[inst[2]]
-            offset = self.label[inst[3]] - address - 1
+            offset = self.label[inst[3]] - self.counter - 1
             offset /= 4
+            print("target address: {0:x}, current address: {1:x}".format(self.label[inst[3]], self.counter))
             imm = self.conv_ngative(offset, 16)
         elif inst[0] == "blez" or inst[0] == "bltz" or inst[0] == "bgez":
             inst_info = self.opcode_table[inst[0]]
             rt = inst_info["rt"]
             rs = self.reg[inst[1]]
-            offset = self.label[inst[2]] - address - 1
+            offset = self.label[inst[2]] - self.counter - 1
             offset /= 4
+            print("target address: {0:x}, current address: {1:x}".format(self.label[inst[2]], self.counter))
             imm = self.conv_ngative(offset, 16)
         else:
             rt = self.reg[inst[1]]
@@ -172,21 +179,21 @@ class Compile(object):
             imm = self.conv_ngative(int(inst[3]), 16)
         return rt, rs, imm
 
-    def jtype(self, inst, counter):
+    def jtype(self, inst):
         inst_info = self.opcode_table[inst[0]]
         opcode = inst_info["opcode"]
         instr_index = self.label[inst[1]] / 4
         print("J-Type: {}".format(inst))
         print("opcode: {}, instr_index: {}".format(opcode, instr_index))
-        b_isnt = int("{0:06b}{1:026b}".format(opcode, instr_index), 2)
-        print("{0:08x}".format(b_isnt))
-        self.instructions.append("{0:08x}".format(b_isnt))
+        b_inst = int("{0:06b}{1:026b}".format(opcode, instr_index), 2)
+        print("{0:08x}".format(b_inst))
+        self.insert_instruction("{0:08x}".format(b_inst))
 
-    def inst_move(self, inst, counter):
+    def inst_move(self, inst):
         replace_inst = ["addi", inst[1], inst[2], "0"]
-        self.def_instruction[replace_inst[0]](replace_inst, counter)
+        self.def_instruction[replace_inst[0]](replace_inst)
 
-    def inst_li(self, inst, counter):
+    def inst_li(self, inst):
         imm = self.conv_ngative(int(inst[2], 10), 32)
         imm_high = (imm & (0xFFFF << 16)) >> 16
         imm_low = imm & 0xFFFF
@@ -194,40 +201,41 @@ class Compile(object):
         print("high: {}, {}".format(hex(imm_high), imm_high))
         print("low: {}, {}".format(hex(imm_low), imm_low))
         replace_inst = ["lui", inst[1], str(imm_high)]
-        self.def_instruction[replace_inst[0]](replace_inst, counter)
+        self.def_instruction[replace_inst[0]](replace_inst)
         replace_inst = ["ori", inst[1], inst[1], str(imm_low)]
-        self.def_instruction[replace_inst[0]](replace_inst, counter)
+        self.def_instruction[replace_inst[0]](replace_inst)
 
-    def inst_nop(self, inst, counter):
-        self.instructions.append("{0:08x}".format(0x0))
+    def inst_nop(self, inst):
+        self.insert_instruction("{0:08x}".format(0x0))
 
-    def inst_b(self, inst, counter):
+    def inst_b(self, inst):
         replace_inst = ["beq", "$0", "$0", inst[1]]
-        self.def_instruction[replace_inst[0]](replace_inst, counter)
+        self.def_instruction[replace_inst[0]](replace_inst)
 
     def run(self):
-        counter = 0
+        self.counter = 0
         instruction_list = self.parse(self.filename)
         for instruction in instruction_list:
             if len(instruction) == 0:
                 continue
             if ":" in instruction[0]:
-                self.label[instruction[0][:-1]] = counter
+                self.label[instruction[0][:-1]] = self.counter
             else:
-                counter += 4
+                self.counter += 4
+                if instruction[0] == "li":
+                    self.counter += 4
 
         for x in self.label:
             print("{} {}".format(x, self.label[x]))
 
-        counter = 0
+        self.counter = 0
         for instruction in instruction_list:
             if len(instruction) == 0:
                 continue
             if ":" in instruction[0]:
                 continue
             else:
-                self.def_instruction[instruction[0]](instruction, counter)
-                counter += 4
+                self.def_instruction[instruction[0]](instruction)
 
         for instruction in self.instructions:
             print(instruction)
