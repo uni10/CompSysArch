@@ -5,11 +5,12 @@ import re
 
 
 class Compile(object):
-    def __init__(self, filename, data_label):
+    def __init__(self, filename, data_label, got):
         self.label = {}
         self.instructions = []
         self.filename = filename
         self.data_label = data_label
+        self.got = got
         self.def_instruction = {
             "lw": self.itype,
             "sw": self.itype,
@@ -88,6 +89,7 @@ class Compile(object):
         print("R-Type: {}".format(inst))
         print("opcode: {}, rs: {}, rt: {}, rd: {}, sa: {}, func: {}".format(opcode, rs, rt, rd, sa, func))
         b_isnt = int("{0:06b}{1:05b}{2:05b}{3:05b}{4:05b}{5:06b}".format(opcode, rs, rt, rd, sa, func), 2)
+        print("{0:08x}".format(b_isnt))
         self.instructions.append("{0:08x}".format(b_isnt))
 
     def decode_rtype(self, inst, counter):
@@ -129,13 +131,14 @@ class Compile(object):
         print("I-Type: {}".format(inst))
         print("rs: {}, rt: {}, offset: {}".format(rs, rt, offset))
         b_isnt = int("{0:06b}{1:05b}{2:05b}{3:016b}".format(opcode, rs, rt, offset), 2)
+        print("{0:08x}".format(b_isnt))
         self.instructions.append("{0:08x}".format(b_isnt))
 
     def decode_itype(self, inst, address):
         if inst[0] == "lw" or inst[0] == "sw":
             target = [x for x in re.split('[()]', inst[2]) if len(x) > 0]
             if target[0] == "%got":
-                imm = self.data_label[target[1]]
+                imm = self.data_label[target[1]][1]
                 return (self.reg[inst[1]], self.reg[target[2]], imm)
             else:
                 imm = self.conv_ngative(int(target[0]), 16)
@@ -170,6 +173,7 @@ class Compile(object):
         print("J-Type: {}".format(inst))
         print("opcode: {}, instr_index: {}".format(opcode, instr_index))
         b_isnt = int("{0:06b}{1:026b}".format(opcode, instr_index), 2)
+        print("{0:08x}".format(b_isnt))
         self.instructions.append("{0:08x}".format(b_isnt))
 
     def inst_move(self, inst, counter):
@@ -259,7 +263,7 @@ class CompileDmem(object):
                 if len(var) == 0:
                     continue
                 if ":" in var[0]:
-                    self.label[var[0][:-1]] = address
+                    self.label[var[0][:-1]] = [address, 0]
                 else:
                     if var[0] == ".space":
                         address += int(var[1])
@@ -268,15 +272,20 @@ class CompileDmem(object):
                     elif var[0] == ".word":
                         f.write(self.number(int(var[1])) + '\n')
                         address += 4
+            got = address
+            for key in self.label:
+                f.write(self.number(self.label[key][0]) + '\n')
+                self.label[key][1] = address
+                address += 4
 
         for key, value in sorted(self.label.iteritems(), key=lambda (k,v): (v,k)):
             print("{} {}".format(key, value))
-        return self.label
+        return self.label, got
 
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
         raise ValueError('The number of arguments must be grater than 2.')
 
-    data_label = CompileDmem(sys.argv[2]).run()
-    Compile(sys.argv[1], data_label).run()
+    data_label, got = CompileDmem(sys.argv[2]).run()
+    Compile(sys.argv[1], data_label, got).run()
