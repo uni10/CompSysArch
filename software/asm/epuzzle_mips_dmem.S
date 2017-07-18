@@ -1,18 +1,21 @@
 stack:
-  .space 128
-
+  .space 256
+dy:
+  .word -1
+  .word 0
+  .word 1
+  .word 0
+dx:
+  .word 0
+  .word 1
+  .word 0
+  .word -1
+fields:
+  .space 23040
+field_length:
+  .space  4
 log_cmd:
   .space  1024
-
-tail:
-  .word 1
-
-head:
-  .space  4
-
-queue:
-  .space  1024
-
 TARGET_FIELD:
   .word 1
   .word 2
@@ -22,21 +25,9 @@ TARGET_FIELD:
   .word 0
   .word 255
   .word 0
-
-field_length:
+queue:
+  .space  1024
+head:
   .space  4
-
-fields:
-  .space 23040
-
-dx:
-  .word 0
+tail:
   .word 1
-  .word 0
-  .word -1
-
-dy:
-  .word -1
-  .word 0
-  .word 1
-  .word 0

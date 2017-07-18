@@ -31,11 +31,14 @@ class Compile(object):
             "beq": self.itype,
             "movz": self.rtype,
             "slt": self.rtype,
+            "slti": self.itype,
+            "sltiu": self.itype,
             "and": self.rtype,
             "sltu": self.rtype,
             "jr": self.rtype,
             "bltz": self.itype,
-            "blez": self.itype
+            "blez": self.itype,
+            "bgez": self.itype,
         }
 
         self.opcode_table = {
@@ -52,12 +55,15 @@ class Compile(object):
             "bne": {"opcode": 0b000101},
             "bltz": {"opcode": 0b000001, "rt": 0b00000},
             "blez": {"opcode": 0b000110, "rt": 0b00000},
+            "bgez": {"opcode": 0b000001, "rt": 0b00001},
             "j": {"opcode": 0b000010},
             "move": {"opcode": 0b000000, "func": 0b000110, "sa": 0b00000},
             "movz": {"opcode": 0b000000, "func": 0b001010, "sa": 0b00000},
             "lui": {"opcode": 0b001111},
             "slt": {"opcode": 0b000000, "func": 0b101010, "sa": 0b00000},
             "sltu": {"opcode": 0b000000, "func": 0b101011, "sa": 0b00000},
+            "slti": {"opcode": 0b001010},
+            "sltiu": {"opcode": 0b001010},
             "and": {"opcode": 0b000000, "func": 0b100100, "sa": 0b00000},
             "jr": {"opcode": 0b000000, "func": 0b001000, "sa": 0b00000, "rt": 0b00000, "rd": 0b00000},
         }
@@ -153,7 +159,7 @@ class Compile(object):
             offset = self.label[inst[3]] - address - 1
             offset /= 4
             imm = self.conv_ngative(offset, 16)
-        elif inst[0] == "blez" or inst[0] == "bltz":
+        elif inst[0] == "blez" or inst[0] == "bltz" or inst[0] == "bgez":
             inst_info = self.opcode_table[inst[0]]
             rt = inst_info["rt"]
             rs = self.reg[inst[1]]

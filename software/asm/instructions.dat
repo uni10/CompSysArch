@@ -1,0 +1,2303 @@
+stack [0, 25452]
+dy [256, 25432]
+dx [272, 25444]
+fields [288, 25428]
+field_length [23328, 25448]
+log_cmd [23332, 25420]
+TARGET_FIELD [24356, 25456]
+queue [24388, 25436]
+head [25412, 25424]
+tail [25416, 25440]
+$L48 1652
+$L14 564
+$L13 576
+$L12 644
+$L11 656
+$L10 684
+$L35 1064
+$L34 1076
+$L37 1320
+$L36 1252
+$L31 1192
+$L30 1220
+$L33 1836
+$L32 1180
+$L57 1916
+$L58 1724
+$L18 1764
+$L39 1792
+$L56 1868
+$L53 1980
+$L65 2216
+$L62 2300
+$L60 2132
+$L61 2060
+$L42 1408
+$L85 2284
+main 0
+$L80 1360
+$L81 1048
+$L82 2248
+$L83 2260
+$L22 1280
+$L23 1016
+$L43 1452
+$L26 1292
+$L27 860
+$L24 988
+$L25 976
+$L40 1268
+$L41 1364
+$L28 848
+$L29 1052
+$L44 1588
+$L45 1560
+$L46 1484
+$L47 1472
+$L3 836
+$L2 68
+$L7 80
+$L6 92
+$L5 192
+$L4 220
+end 2320
+$L9 1744
+$L8 288
+$L54 1968
+$L84 2272
+$L50 2020
+$L70 2156
+$L75 756
+$L74 1252
+$L77 1788
+$L76 816
+$L79 2016
+$L78 2004
+$L69 2288
+I-Type: ['addi', '$sp', '$0', '0']
+rs: 0, rt: 29, offset: 0
+201d0000
+I-Type: ['addi', '$fp', '$sp', '0']
+rs: 29, rt: 30, offset: 0
+23be0000
+I-Type: ['sw', '$0', '80($fp)']
+rs: 30, rt: 0, offset: 80
+afc00050
+I-Type: ['sw', '$0', '96($fp)']
+rs: 30, rt: 0, offset: 96
+afc00060
+value: 2, 0x2
+high: 0x0, 0
+low: 0x2, 2
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+34420002
+I-Type: ['sw', '$2', '100($fp)']
+rs: 30, rt: 2, offset: 100
+afc20064
+value: 4, 0x4
+high: 0x0, 0
+low: 0x4, 4
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '4']
+rs: 2, rt: 2, offset: 4
+34420004
+I-Type: ['sw', '$2', '104($fp)']
+rs: 30, rt: 2, offset: 104
+afc20068
+value: 5, 0x5
+high: 0x0, 0
+low: 0x5, 5
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '5']
+rs: 2, rt: 2, offset: 5
+34420005
+I-Type: ['sw', '$2', '108($fp)']
+rs: 30, rt: 2, offset: 108
+afc2006c
+value: 3, 0x3
+high: 0x0, 0
+low: 0x3, 3
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '3']
+rs: 2, rt: 2, offset: 3
+34420003
+I-Type: ['sw', '$2', '112($fp)']
+rs: 30, rt: 2, offset: 112
+afc20070
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['sw', '$2', '116($fp)']
+rs: 30, rt: 2, offset: 116
+afc20074
+I-Type: ['sw', '$0', '120($fp)']
+rs: 30, rt: 0, offset: 120
+afc00078
+I-Type: ['sw', '$0', '16($fp)']
+rs: 30, rt: 0, offset: 16
+afc00010
+I-Type: ['sw', '$0', '56($fp)']
+rs: 30, rt: 0, offset: 56
+afc00038
+I-Type: ['beq', '$0', '$0', '$L44']
+rs: 0, rt: 0, offset: 378
+1000017a
+I-Type: ['sw', '$0', '24($fp)']
+rs: 30, rt: 0, offset: 24
+afc00018
+I-Type: ['beq', '$0', '$0', '$L5']
+rs: 0, rt: 0, offset: 26
+1000001a
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+I-Type: ['lw', '$2', '84($fp)']
+rs: 30, rt: 2, offset: 84
+8fc20054
+R-Type: ['sll', '$4', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 2, func: 0
+00022080
+I-Type: ['lw', '$2', '20($fp)']
+rs: 30, rt: 2, offset: 20
+8fc20014
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$4', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 1, func: 0
+00022040
+I-Type: ['lw', '$2', '24($fp)']
+rs: 30, rt: 2, offset: 24
+8fc20018
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+I-Type: ['lw', '$2', '92($fp)']
+rs: 30, rt: 2, offset: 92
+8fc2005c
+R-Type: ['sll', '$5', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 2, func: 0
+00022880
+I-Type: ['lw', '$2', '20($fp)']
+rs: 30, rt: 2, offset: 20
+8fc20014
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$5', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 1, func: 0
+00022840
+I-Type: ['lw', '$2', '24($fp)']
+rs: 30, rt: 2, offset: 24
+8fc20018
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '24($fp)']
+rs: 30, rt: 2, offset: 24
+8fc20018
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '24($fp)']
+rs: 30, rt: 2, offset: 24
+afc20018
+I-Type: ['lw', '$2', '24($fp)']
+rs: 30, rt: 2, offset: 24
+8fc20018
+I-Type: ['slti', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+28420002
+I-Type: ['bne', '$2', '$0', '$L6']
+rs: 2, rt: 0, offset: 65508
+1440ffe4
+I-Type: ['lw', '$2', '20($fp)']
+rs: 30, rt: 2, offset: 20
+8fc20014
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '20($fp)']
+rs: 30, rt: 2, offset: 20
+afc20014
+I-Type: ['lw', '$2', '20($fp)']
+rs: 30, rt: 2, offset: 20
+8fc20014
+I-Type: ['slti', '$2', '$2', '3']
+rs: 2, rt: 2, offset: 3
+28420003
+I-Type: ['bne', '$2', '$0', '$L7']
+rs: 2, rt: 0, offset: 65498
+1440ffda
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+I-Type: ['lw', '$2', '92($fp)']
+rs: 30, rt: 2, offset: 92
+8fc2005c
+R-Type: ['sll', '$2', '$2', '5']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 5, func: 0
+00021140
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '88($fp)']
+rs: 30, rt: 3, offset: 88
+8fc30058
+I-Type: ['sw', '$3', '24($2)']
+rs: 2, rt: 3, offset: 24
+ac430018
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+I-Type: ['lw', '$2', '92($fp)']
+rs: 30, rt: 2, offset: 92
+8fc2005c
+R-Type: ['sll', '$2', '$2', '5']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 5, func: 0
+00021140
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '84($fp)']
+rs: 30, rt: 3, offset: 84
+8fc30054
+I-Type: ['sw', '$3', '28($2)']
+rs: 2, rt: 3, offset: 28
+ac43001c
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['lw', '$3', '%got(field_length)($28)']
+rs: 28, rt: 3, offset: 25448
+8f836368
+I-Type: ['lw', '$6', '0($3)']
+rs: 3, rt: 6, offset: 0
+8c660000
+I-Type: ['lw', '$4', '%got(dy)($28)']
+rs: 28, rt: 4, offset: 25432
+8f846358
+I-Type: ['lw', '$3', '88($fp)']
+rs: 30, rt: 3, offset: 88
+8fc30058
+R-Type: ['sll', '$3', '$3', '2']
+opcode: 0, rs: 0, rt: 3, rd: 3, sa: 2, func: 0
+00031880
+R-Type: ['addu', '$3', '$4', '$3']
+opcode: 0, rs: 4, rt: 3, rd: 3, sa: 0, func: 32
+00831820
+I-Type: ['lw', '$4', '0($3)']
+rs: 3, rt: 4, offset: 0
+8c640000
+I-Type: ['lw', '$3', '12($fp)']
+rs: 30, rt: 3, offset: 12
+8fc3000c
+R-Type: ['addu', '$5', '$4', '$3']
+opcode: 0, rs: 4, rt: 3, rd: 5, sa: 0, func: 32
+00832820
+I-Type: ['lw', '$4', '%got(dx)($28)']
+rs: 28, rt: 4, offset: 25444
+8f846364
+I-Type: ['lw', '$3', '88($fp)']
+rs: 30, rt: 3, offset: 88
+8fc30058
+R-Type: ['sll', '$3', '$3', '2']
+opcode: 0, rs: 0, rt: 3, rd: 3, sa: 2, func: 0
+00031880
+R-Type: ['addu', '$3', '$4', '$3']
+opcode: 0, rs: 4, rt: 3, rd: 3, sa: 0, func: 32
+00831820
+I-Type: ['lw', '$4', '0($3)']
+rs: 3, rt: 4, offset: 0
+8c640000
+I-Type: ['lw', '$3', '8($fp)']
+rs: 30, rt: 3, offset: 8
+8fc30008
+R-Type: ['addu', '$3', '$4', '$3']
+opcode: 0, rs: 4, rt: 3, rd: 3, sa: 0, func: 32
+00831820
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+R-Type: ['sll', '$6', '$6', '2']
+opcode: 0, rs: 0, rt: 6, rd: 6, sa: 2, func: 0
+00063080
+R-Type: ['addu', '$5', '$6', '$5']
+opcode: 0, rs: 6, rt: 5, rd: 5, sa: 0, func: 32
+00c52820
+R-Type: ['sll', '$5', '$5', '1']
+opcode: 0, rs: 0, rt: 5, rd: 5, sa: 1, func: 0
+00052840
+R-Type: ['addu', '$3', '$5', '$3']
+opcode: 0, rs: 5, rt: 3, rd: 3, sa: 0, func: 32
+00a31820
+R-Type: ['sll', '$3', '$3', '2']
+opcode: 0, rs: 0, rt: 3, rd: 3, sa: 2, func: 0
+00031880
+R-Type: ['addu', '$3', '$4', '$3']
+opcode: 0, rs: 4, rt: 3, rd: 3, sa: 0, func: 32
+00831820
+I-Type: ['lw', '$3', '0($3)']
+rs: 3, rt: 3, offset: 0
+8c630000
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+R-Type: ['sll', '$5', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 2, func: 0
+00022880
+I-Type: ['lw', '$2', '12($fp)']
+rs: 30, rt: 2, offset: 12
+8fc2000c
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$5', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 1, func: 0
+00022840
+I-Type: ['lw', '$2', '8($fp)']
+rs: 30, rt: 2, offset: 8
+8fc20008
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$5', '0($2)']
+rs: 2, rt: 5, offset: 0
+8c450000
+I-Type: ['lw', '$3', '%got(dy)($28)']
+rs: 28, rt: 3, offset: 25432
+8f836358
+I-Type: ['lw', '$2', '88($fp)']
+rs: 30, rt: 2, offset: 88
+8fc20058
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '12($fp)']
+rs: 30, rt: 2, offset: 12
+8fc2000c
+R-Type: ['addu', '$4', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 4, sa: 0, func: 32
+00622020
+I-Type: ['lw', '$3', '%got(dx)($28)']
+rs: 28, rt: 3, offset: 25444
+8f836364
+I-Type: ['lw', '$2', '88($fp)']
+rs: 30, rt: 2, offset: 88
+8fc20058
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '8($fp)']
+rs: 30, rt: 2, offset: 8
+8fc20008
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+R-Type: ['sll', '$5', '$5', '2']
+opcode: 0, rs: 0, rt: 5, rd: 5, sa: 2, func: 0
+00052880
+R-Type: ['addu', '$4', '$5', '$4']
+opcode: 0, rs: 5, rt: 4, rd: 4, sa: 0, func: 32
+00a42020
+R-Type: ['sll', '$4', '$4', '1']
+opcode: 0, rs: 0, rt: 4, rd: 4, sa: 1, func: 0
+00042040
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['sw', '$0', '0($2)']
+rs: 2, rt: 0, offset: 0
+ac400000
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '1']
+rs: 2, rt: 3, offset: 1
+20430001
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['sw', '$2', '16($fp)']
+rs: 30, rt: 2, offset: 16
+afc20010
+I-Type: ['beq', '$0', '$0', '$L18']
+rs: 0, rt: 0, offset: 301
+1000012d
+I-Type: ['sw', '$0', '32($fp)']
+rs: 30, rt: 0, offset: 32
+afc00020
+I-Type: ['beq', '$0', '$0', '$L11']
+rs: 0, rt: 0, offset: 21
+10000015
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+I-Type: ['lw', '$2', '84($fp)']
+rs: 30, rt: 2, offset: 84
+8fc20054
+R-Type: ['sll', '$4', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 2, func: 0
+00022080
+I-Type: ['lw', '$2', '28($fp)']
+rs: 30, rt: 2, offset: 28
+8fc2001c
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$4', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 1, func: 0
+00022040
+I-Type: ['lw', '$2', '32($fp)']
+rs: 30, rt: 2, offset: 32
+8fc20020
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['bne', '$2', '$0', '$L12']
+rs: 2, rt: 0, offset: 5
+14400005
+I-Type: ['lw', '$2', '32($fp)']
+rs: 30, rt: 2, offset: 32
+8fc20020
+I-Type: ['sw', '$2', '8($fp)']
+rs: 30, rt: 2, offset: 8
+afc20008
+I-Type: ['lw', '$2', '28($fp)']
+rs: 30, rt: 2, offset: 28
+8fc2001c
+I-Type: ['sw', '$2', '12($fp)']
+rs: 30, rt: 2, offset: 12
+afc2000c
+I-Type: ['lw', '$2', '32($fp)']
+rs: 30, rt: 2, offset: 32
+8fc20020
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '32($fp)']
+rs: 30, rt: 2, offset: 32
+afc20020
+I-Type: ['lw', '$2', '32($fp)']
+rs: 30, rt: 2, offset: 32
+8fc20020
+I-Type: ['slti', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+28420002
+I-Type: ['bne', '$2', '$0', '$L13']
+rs: 2, rt: 0, offset: 65513
+1440ffe9
+I-Type: ['lw', '$2', '28($fp)']
+rs: 30, rt: 2, offset: 28
+8fc2001c
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '28($fp)']
+rs: 30, rt: 2, offset: 28
+afc2001c
+I-Type: ['lw', '$2', '28($fp)']
+rs: 30, rt: 2, offset: 28
+8fc2001c
+I-Type: ['slti', '$2', '$2', '3']
+rs: 2, rt: 2, offset: 3
+28420003
+I-Type: ['bne', '$2', '$0', '$L14']
+rs: 2, rt: 0, offset: 65503
+1440ffdf
+I-Type: ['lw', '$3', '%got(dx)($28)']
+rs: 28, rt: 3, offset: 25444
+8f836364
+I-Type: ['lw', '$2', '88($fp)']
+rs: 30, rt: 2, offset: 88
+8fc20058
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '8($fp)']
+rs: 30, rt: 2, offset: 8
+8fc20008
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['addiu', '$2', '$2', '0']
+rs: 2, rt: 2, offset: 0
+20420000
+I-Type: ['sltiu', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+28420002
+I-Type: ['bne', '$2', '$0', '$L75']
+rs: 2, rt: 0, offset: 4
+14400004
+I-Type: ['sw', '$0', '16($fp)']
+rs: 30, rt: 0, offset: 16
+afc00010
+I-Type: ['beq', '$0', '$0', '$L18']
+rs: 0, rt: 0, offset: 253
+100000fd
+I-Type: ['lw', '$3', '%got(dy)($28)']
+rs: 28, rt: 3, offset: 25432
+8f836358
+I-Type: ['lw', '$2', '88($fp)']
+rs: 30, rt: 2, offset: 88
+8fc20058
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '12($fp)']
+rs: 30, rt: 2, offset: 12
+8fc2000c
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['addiu', '$2', '$2', '0']
+rs: 2, rt: 2, offset: 0
+20420000
+R-Type: ['sltu', '$2', '$2', '3']
+opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 43
+0043102b
+I-Type: ['bne', '$2', '$0', '$L76']
+rs: 2, rt: 0, offset: 4
+14400004
+I-Type: ['sw', '$0', '16($fp)']
+rs: 30, rt: 0, offset: 16
+afc00010
+I-Type: ['beq', '$0', '$0', '$L18']
+rs: 0, rt: 0, offset: 238
+100000ee
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['sw', '$2', '92($fp)']
+rs: 30, rt: 2, offset: 92
+afc2005c
+I-Type: ['sw', '$0', '20($fp)']
+rs: 30, rt: 0, offset: 20
+afc00014
+I-Type: ['beq', '$0', '$0', '$L4']
+rs: 0, rt: 0, offset: 65380
+1000ff64
+I-Type: ['sw', '$0', '40($fp)']
+rs: 30, rt: 0, offset: 40
+afc00028
+I-Type: ['beq', '$0', '$0', '$L24']
+rs: 0, rt: 0, offset: 33
+10000021
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+I-Type: ['lw', '$2', '92($fp)']
+rs: 30, rt: 2, offset: 92
+8fc2005c
+R-Type: ['sll', '$4', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 2, func: 0
+00022080
+I-Type: ['lw', '$2', '36($fp)']
+rs: 30, rt: 2, offset: 36
+8fc20024
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$4', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 1, func: 0
+00022040
+I-Type: ['lw', '$2', '40($fp)']
+rs: 30, rt: 2, offset: 40
+8fc20028
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$2', '$2', '-1']
+rs: 2, rt: 2, offset: 65535
+2042ffff
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+R-Type: ['sll', '$5', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 2, func: 0
+00022880
+I-Type: ['lw', '$2', '36($fp)']
+rs: 30, rt: 2, offset: 36
+8fc20024
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$5', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 1, func: 0
+00022840
+I-Type: ['lw', '$2', '40($fp)']
+rs: 30, rt: 2, offset: 40
+8fc20028
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['beq', '$3', '$2', '$L25']
+rs: 3, rt: 2, offset: 4
+10620004
+I-Type: ['sw', '$0', '16($fp)']
+rs: 30, rt: 0, offset: 16
+afc00010
+I-Type: ['beq', '$0', '$0', '$L26']
+rs: 0, rt: 0, offset: 80
+10000050
+I-Type: ['lw', '$2', '40($fp)']
+rs: 30, rt: 2, offset: 40
+8fc20028
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '40($fp)']
+rs: 30, rt: 2, offset: 40
+afc20028
+I-Type: ['lw', '$2', '40($fp)']
+rs: 30, rt: 2, offset: 40
+8fc20028
+I-Type: ['slti', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+28420002
+I-Type: ['bne', '$2', '$0', '$L27']
+rs: 2, rt: 0, offset: 65501
+1440ffdd
+I-Type: ['lw', '$2', '36($fp)']
+rs: 30, rt: 2, offset: 36
+8fc20024
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '36($fp)']
+rs: 30, rt: 2, offset: 36
+afc20024
+I-Type: ['lw', '$2', '36($fp)']
+rs: 30, rt: 2, offset: 36
+8fc20024
+I-Type: ['slti', '$2', '$2', '3']
+rs: 2, rt: 2, offset: 3
+28420003
+I-Type: ['bne', '$2', '$0', '$L28']
+rs: 2, rt: 0, offset: 65491
+1440ffd3
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['sw', '$2', '16($fp)']
+rs: 30, rt: 2, offset: 16
+afc20010
+I-Type: ['beq', '$0', '$0', '$L26']
+rs: 0, rt: 0, offset: 62
+1000003e
+I-Type: ['sw', '$0', '44($fp)']
+rs: 30, rt: 0, offset: 44
+afc0002c
+I-Type: ['beq', '$0', '$0', '$L30']
+rs: 0, rt: 0, offset: 40
+10000028
+I-Type: ['sw', '$0', '48($fp)']
+rs: 30, rt: 0, offset: 48
+afc00030
+I-Type: ['beq', '$0', '$0', '$L31']
+rs: 0, rt: 0, offset: 30
+1000001e
+I-Type: ['lw', '$3', '%got(TARGET_FIELD)($28)']
+rs: 28, rt: 3, offset: 25456
+8f836370
+I-Type: ['lw', '$2', '44($fp)']
+rs: 30, rt: 2, offset: 44
+8fc2002c
+R-Type: ['sll', '$4', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 4, sa: 1, func: 0
+00022040
+I-Type: ['lw', '$2', '48($fp)']
+rs: 30, rt: 2, offset: 48
+8fc20030
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$2', '$2', '-1']
+rs: 2, rt: 2, offset: 65535
+2042ffff
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+R-Type: ['sll', '$5', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 2, func: 0
+00022880
+I-Type: ['lw', '$2', '44($fp)']
+rs: 30, rt: 2, offset: 44
+8fc2002c
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$5', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 1, func: 0
+00022840
+I-Type: ['lw', '$2', '48($fp)']
+rs: 30, rt: 2, offset: 48
+8fc20030
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['beq', '$3', '$2', '$L32']
+rs: 3, rt: 2, offset: 4
+10620004
+I-Type: ['sw', '$0', '16($fp)']
+rs: 30, rt: 0, offset: 16
+afc00010
+I-Type: ['beq', '$0', '$0', '$L33']
+rs: 0, rt: 0, offset: 165
+100000a5
+I-Type: ['lw', '$2', '48($fp)']
+rs: 30, rt: 2, offset: 48
+8fc20030
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '48($fp)']
+rs: 30, rt: 2, offset: 48
+afc20030
+I-Type: ['lw', '$2', '48($fp)']
+rs: 30, rt: 2, offset: 48
+8fc20030
+I-Type: ['slti', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+28420002
+I-Type: ['bne', '$2', '$0', '$L34']
+rs: 2, rt: 0, offset: 65504
+1440ffe0
+I-Type: ['lw', '$2', '44($fp)']
+rs: 30, rt: 2, offset: 44
+8fc2002c
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '44($fp)']
+rs: 30, rt: 2, offset: 44
+afc2002c
+I-Type: ['lw', '$2', '44($fp)']
+rs: 30, rt: 2, offset: 44
+8fc2002c
+I-Type: ['slti', '$2', '$2', '3']
+rs: 2, rt: 2, offset: 3
+28420003
+I-Type: ['bne', '$2', '$0', '$L35']
+rs: 2, rt: 0, offset: 65494
+1440ffd6
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['sw', '$2', '16($fp)']
+rs: 30, rt: 2, offset: 16
+afc20010
+I-Type: ['beq', '$0', '$0', '$L33']
+rs: 0, rt: 0, offset: 147
+10000093
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['sw', '$2', '52($fp)']
+rs: 30, rt: 2, offset: 52
+afc20034
+I-Type: ['beq', '$0', '$0', '$L37']
+rs: 0, rt: 0, offset: 14
+1000000e
+I-Type: ['lw', '$2', '52($fp)']
+rs: 30, rt: 2, offset: 52
+8fc20034
+I-Type: ['sw', '$2', '92($fp)']
+rs: 30, rt: 2, offset: 92
+afc2005c
+I-Type: ['sw', '$0', '36($fp)']
+rs: 30, rt: 0, offset: 36
+afc00024
+I-Type: ['beq', '$0', '$0', '$L23']
+rs: 0, rt: 0, offset: 65468
+1000ffbc
+I-Type: ['lw', '$3', '16($fp)']
+rs: 30, rt: 3, offset: 16
+8fc30010
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['beq', '$3', '$2', '$L77']
+rs: 3, rt: 2, offset: 121
+10620079
+I-Type: ['lw', '$2', '52($fp)']
+rs: 30, rt: 2, offset: 52
+8fc20034
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '52($fp)']
+rs: 30, rt: 2, offset: 52
+afc20034
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '-1']
+rs: 2, rt: 3, offset: 65535
+2043ffff
+I-Type: ['lw', '$2', '52($fp)']
+rs: 30, rt: 2, offset: 52
+8fc20034
+R-Type: ['slt', '$2', '$2', '$3']
+opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 42
+0043102a
+I-Type: ['bne', '$2', '$0', '$L40']
+rs: 2, rt: 0, offset: 65517
+1440ffed
+I-Type: ['sw', '$0', '16($fp)']
+rs: 30, rt: 0, offset: 16
+afc00010
+I-Type: ['beq', '$0', '$0', '$L39']
+rs: 0, rt: 0, offset: 109
+1000006d
+I-Type: ['lw', '$2', '%got(head)($28)']
+rs: 28, rt: 2, offset: 25424
+8f826350
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+value: -2147483648, 0x80000000
+high: 0x8000, 32768
+low: 0x0, 0
+I-Type: ['lui', '$2', '32768']
+rs: 0, rt: 2, offset: 32768
+3c028000
+I-Type: ['ori', '$2', '$2', '0']
+rs: 2, rt: 2, offset: 0
+34420000
+I-Type: ['ori', '$2', '$2', '255']
+rs: 2, rt: 2, offset: 255
+344200ff
+R-Type: ['and', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 36
+00621024
+I-Type: ['bgez', '$2', '$L42']
+rs: 2, rt: 1, offset: 5
+04410005
+I-Type: ['addiu', '$2', '$2', '-1']
+rs: 2, rt: 2, offset: 65535
+2042ffff
+value: -256, 0xffffff00
+high: 0xffff, 65535
+low: 0xff00, 65280
+I-Type: ['lui', '$3', '65535']
+rs: 0, rt: 3, offset: 65535
+3c03ffff
+I-Type: ['ori', '$3', '$3', '65280']
+rs: 3, rt: 3, offset: 65280
+3463ff00
+R-Type: ['or', '$2', '$2', '$3']
+opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 37
+00431025
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['lw', '$3', '%got(queue)($28)']
+rs: 28, rt: 3, offset: 25436
+8f83635c
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['sw', '$2', '16($fp)']
+rs: 30, rt: 2, offset: 16
+afc20010
+I-Type: ['lw', '$2', '%got(head)($28)']
+rs: 28, rt: 2, offset: 25424
+8f826350
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '1']
+rs: 2, rt: 3, offset: 1
+20430001
+I-Type: ['lw', '$2', '%got(head)($28)']
+rs: 28, rt: 2, offset: 25424
+8f826350
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '16($fp)']
+rs: 30, rt: 2, offset: 16
+8fc20010
+I-Type: ['sw', '$2', '80($fp)']
+rs: 30, rt: 2, offset: 80
+afc20050
+I-Type: ['sw', '$0', '64($fp)']
+rs: 30, rt: 0, offset: 64
+afc00040
+I-Type: ['beq', '$0', '$0', '$L53']
+rs: 0, rt: 0, offset: 128
+10000080
+I-Type: ['sw', '$0', '60($fp)']
+rs: 30, rt: 0, offset: 60
+afc0003c
+I-Type: ['beq', '$0', '$0', '$L45']
+rs: 0, rt: 0, offset: 20
+10000014
+I-Type: ['lw', '$2', '56($fp)']
+rs: 30, rt: 2, offset: 56
+8fc20038
+R-Type: ['sll', '$3', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 3, sa: 1, func: 0
+00021840
+I-Type: ['lw', '$2', '60($fp)']
+rs: 30, rt: 2, offset: 60
+8fc2003c
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+I-Type: ['addiu', '$3', '$fp', '8']
+rs: 30, rt: 3, offset: 8
+23c30008
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$3', '92($2)']
+rs: 2, rt: 3, offset: 92
+8c43005c
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+I-Type: ['lw', '$2', '56($fp)']
+rs: 30, rt: 2, offset: 56
+8fc20038
+R-Type: ['sll', '$5', '$2', '1']
+opcode: 0, rs: 0, rt: 2, rd: 5, sa: 1, func: 0
+00022840
+I-Type: ['lw', '$2', '60($fp)']
+rs: 30, rt: 2, offset: 60
+8fc2003c
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '60($fp)']
+rs: 30, rt: 2, offset: 60
+8fc2003c
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '60($fp)']
+rs: 30, rt: 2, offset: 60
+afc2003c
+I-Type: ['lw', '$2', '60($fp)']
+rs: 30, rt: 2, offset: 60
+8fc2003c
+I-Type: ['slti', '$2', '$2', '2']
+rs: 2, rt: 2, offset: 2
+28420002
+I-Type: ['bne', '$2', '$0', '$L46']
+rs: 2, rt: 0, offset: 65514
+1440ffea
+I-Type: ['lw', '$2', '56($fp)']
+rs: 30, rt: 2, offset: 56
+8fc20038
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '56($fp)']
+rs: 30, rt: 2, offset: 56
+afc20038
+I-Type: ['lw', '$2', '56($fp)']
+rs: 30, rt: 2, offset: 56
+8fc20038
+I-Type: ['slti', '$2', '$2', '3']
+rs: 2, rt: 2, offset: 3
+28420003
+I-Type: ['bne', '$2', '$0', '$L47']
+rs: 2, rt: 0, offset: 65504
+1440ffe0
+I-Type: ['lw', '$2', '%got(fields)($28)']
+rs: 28, rt: 2, offset: 25428
+8f826354
+value: -1, 0xffffffff
+high: 0xffff, 65535
+low: 0xffff, 65535
+I-Type: ['lui', '$3', '65535']
+rs: 0, rt: 3, offset: 65535
+3c03ffff
+I-Type: ['ori', '$3', '$3', '65535']
+rs: 3, rt: 3, offset: 65535
+3463ffff
+I-Type: ['sw', '$3', '24($2)']
+rs: 2, rt: 3, offset: 24
+ac430018
+I-Type: ['lw', '$2', '%got(fields)($28)']
+rs: 28, rt: 2, offset: 25428
+8f826354
+I-Type: ['sw', '$0', '28($2)']
+rs: 2, rt: 0, offset: 28
+ac40001c
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '1']
+rs: 2, rt: 3, offset: 1
+20430001
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '%got(queue)($28)']
+rs: 28, rt: 2, offset: 25436
+8f82635c
+I-Type: ['sw', '$0', '0($2)']
+rs: 2, rt: 0, offset: 0
+ac400000
+I-Type: ['lw', '$2', '%got(head)($28)']
+rs: 28, rt: 2, offset: 25424
+8f826350
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '%got(tail)($28)']
+rs: 28, rt: 2, offset: 25440
+8f826360
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+R-Type: ['slt', '$2', '$2', '$3']
+opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 42
+0043102a
+I-Type: ['bne', '$2', '$0', '$L78']
+rs: 2, rt: 0, offset: 82
+14400052
+I-Type: ['lw', '$2', '96($fp)']
+rs: 30, rt: 2, offset: 96
+8fc20060
+I-Type: ['bne', '$2', '$0', '$L79']
+rs: 2, rt: 0, offset: 82
+14400052
+I-Type: ['lw', '$2', '%got(head)($28)']
+rs: 28, rt: 2, offset: 25424
+8f826350
+I-Type: ['lw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+8c430000
+I-Type: ['lw', '$2', '%got(tail)($28)']
+rs: 28, rt: 2, offset: 25440
+8f826360
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['bne', '$3', '$2', '$L80']
+rs: 3, rt: 2, offset: 65448
+1462ffa8
+I-Type: ['beq', '$0', '$0', '$L50']
+rs: 0, rt: 0, offset: 75
+1000004b
+I-Type: ['lw', '$2', '80($fp)']
+rs: 30, rt: 2, offset: 80
+8fc20050
+I-Type: ['sw', '$2', '84($fp)']
+rs: 30, rt: 2, offset: 84
+afc20054
+I-Type: ['lw', '$2', '64($fp)']
+rs: 30, rt: 2, offset: 64
+8fc20040
+I-Type: ['sw', '$2', '88($fp)']
+rs: 30, rt: 2, offset: 88
+afc20058
+I-Type: ['sw', '$0', '8($fp)']
+rs: 30, rt: 0, offset: 8
+afc00008
+I-Type: ['sw', '$0', '12($fp)']
+rs: 30, rt: 0, offset: 12
+afc0000c
+I-Type: ['sw', '$0', '28($fp)']
+rs: 30, rt: 0, offset: 28
+afc0001c
+I-Type: ['beq', '$0', '$0', '$L10']
+rs: 0, rt: 0, offset: 65267
+1000fef3
+I-Type: ['lw', '$3', '16($fp)']
+rs: 30, rt: 3, offset: 16
+8fc30010
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['bne', '$3', '$2', '$L54']
+rs: 3, rt: 2, offset: 48
+14620030
+I-Type: ['beq', '$0', '$0', '$L74']
+rs: 0, rt: 0, offset: 65403
+1000ff7b
+I-Type: ['lw', '$3', '16($fp)']
+rs: 30, rt: 3, offset: 16
+8fc30010
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['bne', '$3', '$2', '$L81']
+rs: 3, rt: 2, offset: 65347
+1462ff43
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '-1']
+rs: 2, rt: 3, offset: 65535
+2043ffff
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['beq', '$0', '$0', '$L54']
+rs: 0, rt: 0, offset: 34
+10000022
+I-Type: ['lw', '$3', '16($fp)']
+rs: 30, rt: 3, offset: 16
+8fc30010
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['bne', '$3', '$2', '$L56']
+rs: 3, rt: 2, offset: 5
+14620005
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$2', '0']
+rs: 0, rt: 2, offset: 0
+3c020000
+I-Type: ['ori', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+34420001
+I-Type: ['sw', '$2', '96($fp)']
+rs: 30, rt: 2, offset: 96
+afc20060
+I-Type: ['beq', '$0', '$0', '$L50']
+rs: 0, rt: 0, offset: 39
+10000027
+I-Type: ['lw', '$2', '%got(tail)($28)']
+rs: 28, rt: 2, offset: 25440
+8f826360
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '-1']
+rs: 2, rt: 3, offset: 65535
+2043ffff
+value: -2147483648, 0x80000000
+high: 0x8000, 32768
+low: 0x0, 0
+I-Type: ['lui', '$2', '32768']
+rs: 0, rt: 2, offset: 32768
+3c028000
+I-Type: ['ori', '$2', '$2', '0']
+rs: 2, rt: 2, offset: 0
+34420000
+I-Type: ['ori', '$2', '$2', '255']
+rs: 2, rt: 2, offset: 255
+344200ff
+R-Type: ['and', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 36
+00621024
+I-Type: ['bgez', '$2', '$L57']
+rs: 2, rt: 1, offset: 5
+04410005
+I-Type: ['addiu', '$2', '$2', '-1']
+rs: 2, rt: 2, offset: 65535
+2042ffff
+value: -256, 0xffffff00
+high: 0xffff, 65535
+low: 0xff00, 65280
+I-Type: ['lui', '$3', '65535']
+rs: 0, rt: 3, offset: 65535
+3c03ffff
+I-Type: ['ori', '$3', '$3', '65280']
+rs: 3, rt: 3, offset: 65280
+3463ff00
+R-Type: ['or', '$2', '$2', '$3']
+opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 37
+00431025
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['addi', '$5', '$2', '0']
+rs: 2, rt: 5, offset: 0
+20450000
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '-1']
+rs: 2, rt: 3, offset: 65535
+2043ffff
+I-Type: ['lw', '$4', '%got(queue)($28)']
+rs: 28, rt: 4, offset: 25436
+8f84635c
+R-Type: ['sll', '$2', '$5', '2']
+opcode: 0, rs: 0, rt: 5, rd: 2, sa: 2, func: 0
+00051080
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '%got(tail)($28)']
+rs: 28, rt: 2, offset: 25440
+8f826360
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$3', '$2', '1']
+rs: 2, rt: 3, offset: 1
+20430001
+I-Type: ['lw', '$2', '%got(tail)($28)']
+rs: 28, rt: 2, offset: 25440
+8f826360
+I-Type: ['sw', '$3', '0($2)']
+rs: 2, rt: 3, offset: 0
+ac430000
+I-Type: ['lw', '$2', '64($fp)']
+rs: 30, rt: 2, offset: 64
+8fc20040
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '64($fp)']
+rs: 30, rt: 2, offset: 64
+afc20040
+I-Type: ['lw', '$2', '64($fp)']
+rs: 30, rt: 2, offset: 64
+8fc20040
+I-Type: ['slti', '$2', '$2', '4']
+rs: 2, rt: 2, offset: 4
+28420004
+I-Type: ['bne', '$2', '$0', '$L58']
+rs: 2, rt: 0, offset: 65469
+1440ffbd
+I-Type: ['beq', '$0', '$0', '$L48']
+rs: 0, rt: 0, offset: 65449
+1000ffa9
+I-Type: ['beq', '$0', '$0', '$L50']
+rs: 0, rt: 0, offset: 2
+10000002
+I-Type: ['lw', '$2', '96($fp)']
+rs: 30, rt: 2, offset: 96
+8fc20060
+I-Type: ['beq', '$2', '$0', 'end']
+rs: 2, rt: 0, offset: 73
+10400049
+I-Type: ['sw', '$0', '68($fp)']
+rs: 30, rt: 0, offset: 68
+afc00044
+I-Type: ['lw', '$2', '%got(field_length)($28)']
+rs: 28, rt: 2, offset: 25448
+8f826368
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+I-Type: ['addiu', '$2', '$2', '-1']
+rs: 2, rt: 2, offset: 65535
+2042ffff
+I-Type: ['sw', '$2', '72($fp)']
+rs: 30, rt: 2, offset: 72
+afc20048
+I-Type: ['beq', '$0', '$0', '$L60']
+rs: 0, rt: 0, offset: 19
+10000013
+I-Type: ['lw', '$3', '68($fp)']
+rs: 30, rt: 3, offset: 68
+8fc30044
+I-Type: ['addiu', '$2', '$3', '1']
+rs: 3, rt: 2, offset: 1
+20620001
+I-Type: ['sw', '$2', '68($fp)']
+rs: 30, rt: 2, offset: 68
+afc20044
+I-Type: ['lw', '$4', '%got(fields)($28)']
+rs: 28, rt: 4, offset: 25428
+8f846354
+I-Type: ['lw', '$2', '72($fp)']
+rs: 30, rt: 2, offset: 72
+8fc20048
+R-Type: ['sll', '$2', '$2', '5']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 5, func: 0
+00021140
+R-Type: ['addu', '$2', '$4', '$2']
+opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
+00821020
+I-Type: ['lw', '$4', '24($2)']
+rs: 2, rt: 4, offset: 24
+8c440018
+I-Type: ['lw', '$5', '%got(log_cmd)($28)']
+rs: 28, rt: 5, offset: 25420
+8f85634c
+R-Type: ['sll', '$2', '$3', '2']
+opcode: 0, rs: 0, rt: 3, rd: 2, sa: 2, func: 0
+00031080
+R-Type: ['addu', '$2', '$5', '$2']
+opcode: 0, rs: 5, rt: 2, rd: 2, sa: 0, func: 32
+00a21020
+I-Type: ['sw', '$4', '0($2)']
+rs: 2, rt: 4, offset: 0
+ac440000
+I-Type: ['lw', '$3', '%got(fields)($28)']
+rs: 28, rt: 3, offset: 25428
+8f836354
+I-Type: ['lw', '$2', '72($fp)']
+rs: 30, rt: 2, offset: 72
+8fc20048
+R-Type: ['sll', '$2', '$2', '5']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 5, func: 0
+00021140
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$2', '28($2)']
+rs: 2, rt: 2, offset: 28
+8c42001c
+I-Type: ['sw', '$2', '72($fp)']
+rs: 30, rt: 2, offset: 72
+afc20048
+I-Type: ['lw', '$2', '72($fp)']
+rs: 30, rt: 2, offset: 72
+8fc20048
+I-Type: ['bne', '$2', '$0', '$L61']
+rs: 2, rt: 0, offset: 65516
+1440ffec
+I-Type: ['sw', '$0', '76($fp)']
+rs: 30, rt: 0, offset: 76
+afc0004c
+I-Type: ['beq', '$0', '$0', '$L62']
+rs: 0, rt: 0, offset: 37
+10000025
+I-Type: ['lw', '$3', '%got(log_cmd)($28)']
+rs: 28, rt: 3, offset: 25420
+8f83634c
+I-Type: ['lw', '$2', '76($fp)']
+rs: 30, rt: 2, offset: 76
+8fc2004c
+R-Type: ['sll', '$2', '$2', '2']
+opcode: 0, rs: 0, rt: 2, rd: 2, sa: 2, func: 0
+00021080
+R-Type: ['addu', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
+00621020
+I-Type: ['lw', '$2', '0($2)']
+rs: 2, rt: 2, offset: 0
+8c420000
+value: 1, 0x1
+high: 0x0, 0
+low: 0x1, 1
+I-Type: ['lui', '$3', '0']
+rs: 0, rt: 3, offset: 0
+3c030000
+I-Type: ['ori', '$3', '$3', '1']
+rs: 3, rt: 3, offset: 1
+34630001
+I-Type: ['beq', '$2', '$3', '$L82']
+rs: 2, rt: 3, offset: 16
+10430010
+I-Type: ['slti', '$3', '$2', '2']
+rs: 2, rt: 3, offset: 2
+28430002
+I-Type: ['beq', '$3', '$0', '$L65']
+rs: 3, rt: 0, offset: 5
+10600005
+I-Type: ['beq', '$2', '$0', '$L83']
+rs: 2, rt: 0, offset: 14
+1040000e
+I-Type: ['beq', '$0', '$0', '$L69']
+rs: 0, rt: 0, offset: 19
+10000013
+value: 2, 0x2
+high: 0x0, 0
+low: 0x2, 2
+I-Type: ['lui', '$3', '0']
+rs: 0, rt: 3, offset: 0
+3c030000
+I-Type: ['ori', '$3', '$3', '2']
+rs: 3, rt: 3, offset: 2
+34630002
+I-Type: ['beq', '$2', '$3', '$L84']
+rs: 2, rt: 3, offset: 12
+1043000c
+value: 3, 0x3
+high: 0x0, 0
+low: 0x3, 3
+I-Type: ['lui', '$3', '0']
+rs: 0, rt: 3, offset: 0
+3c030000
+I-Type: ['ori', '$3', '$3', '3']
+rs: 3, rt: 3, offset: 3
+34630003
+I-Type: ['beq', '$2', '$3', '$L85']
+rs: 2, rt: 3, offset: 12
+1043000c
+I-Type: ['beq', '$0', '$0', '$L69']
+rs: 0, rt: 0, offset: 11
+1000000b
+I-Type: ['beq', '$0', '$0', '$L69']
+rs: 0, rt: 0, offset: 8
+10000008
+I-Type: ['beq', '$0', '$0', '$L69']
+rs: 0, rt: 0, offset: 5
+10000005
+I-Type: ['beq', '$0', '$0', '$L69']
+rs: 0, rt: 0, offset: 2
+10000002
+I-Type: ['lw', '$2', '76($fp)']
+rs: 30, rt: 2, offset: 76
+8fc2004c
+I-Type: ['addiu', '$2', '$2', '1']
+rs: 2, rt: 2, offset: 1
+20420001
+I-Type: ['sw', '$2', '76($fp)']
+rs: 30, rt: 2, offset: 76
+afc2004c
+I-Type: ['lw', '$3', '76($fp)']
+rs: 30, rt: 3, offset: 76
+8fc3004c
+I-Type: ['lw', '$2', '68($fp)']
+rs: 30, rt: 2, offset: 68
+8fc20044
+R-Type: ['slt', '$2', '$3', '$2']
+opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 42
+0062102a
+I-Type: ['bne', '$2', '$0', '$L70']
+rs: 2, rt: 0, offset: 65496
+1440ffd8
+J-Type: ['j', 'end']
+opcode: 2, instr_index: 580
+08000244
+201d0000
+23be0000
+afc00050
+afc00060
+3c020000
+34420002
+afc20064
+3c020000
+34420004
+afc20068
+3c020000
+34420005
+afc2006c
+3c020000
+34420003
+afc20070
+3c020000
+34420001
+afc20074
+afc00078
+afc00010
+00000000
+afc00038
+1000017a
+00000000
+afc00018
+1000001a
+00000000
+8f836354
+8fc20054
+00022080
+8fc20014
+00821020
+00022040
+8fc20018
+00821020
+00021080
+00621020
+8c430000
+8f846354
+8fc2005c
+00022880
+8fc20014
+00a21020
+00022840
+8fc20018
+00a21020
+00021080
+00821020
+ac430000
+8fc20018
+20420001
+afc20018
+8fc20018
+28420002
+1440ffe4
+00000000
+8fc20014
+20420001
+afc20014
+8fc20014
+28420003
+1440ffda
+00000000
+8f836354
+8fc2005c
+00021140
+00621020
+8fc30058
+ac430018
+8f836354
+8fc2005c
+00021140
+00621020
+8fc30054
+ac43001c
+00000000
+8f826368
+8c420000
+8f836368
+8c660000
+8f846358
+8fc30058
+00031880
+00831820
+8c640000
+8fc3000c
+00832820
+8f846364
+8fc30058
+00031880
+00831820
+8c640000
+8fc30008
+00831820
+8f846354
+00063080
+00c52820
+00052840
+00a31820
+00031880
+00831820
+8c630000
+8f846354
+00022880
+8fc2000c
+00a21020
+00022840
+8fc20008
+00a21020
+00021080
+00821020
+ac430000
+8f826368
+8c450000
+8f836358
+8fc20058
+00021080
+00621020
+8c430000
+8fc2000c
+00622020
+8f836364
+8fc20058
+00021080
+00621020
+8c430000
+8fc20008
+00621020
+8f836354
+00052880
+00a42020
+00042040
+00821020
+00021080
+00621020
+ac400000
+8f826368
+8c420000
+20430001
+8f826368
+ac430000
+3c020000
+34420001
+afc20010
+1000012d
+00000000
+afc00020
+10000015
+00000000
+8f836354
+8fc20054
+00022080
+8fc2001c
+00821020
+00022040
+8fc20020
+00821020
+00021080
+00621020
+8c420000
+14400005
+00000000
+8fc20020
+afc20008
+8fc2001c
+afc2000c
+8fc20020
+20420001
+afc20020
+8fc20020
+28420002
+1440ffe9
+00000000
+8fc2001c
+20420001
+afc2001c
+8fc2001c
+28420003
+1440ffdf
+00000000
+8f836364
+8fc20058
+00021080
+00621020
+8c430000
+8fc20008
+00621020
+20420000
+28420002
+14400004
+00000000
+afc00010
+100000fd
+00000000
+00000000
+8f836358
+8fc20058
+00021080
+00621020
+8c430000
+8fc2000c
+00621020
+20420000
+0043102b
+14400004
+00000000
+afc00010
+100000ee
+00000000
+00000000
+8f826368
+8c420000
+afc2005c
+00000000
+afc00014
+1000ff64
+00000000
+afc00028
+10000021
+00000000
+8f836354
+8fc2005c
+00022080
+8fc20024
+00821020
+00022040
+8fc20028
+00821020
+00021080
+00621020
+8c430000
+8f826368
+8c420000
+2042ffff
+8f846354
+00022880
+8fc20024
+00a21020
+00022840
+8fc20028
+00a21020
+00021080
+00821020
+8c420000
+10620004
+00000000
+afc00010
+10000050
+00000000
+8fc20028
+20420001
+afc20028
+8fc20028
+28420002
+1440ffdd
+00000000
+8fc20024
+20420001
+afc20024
+8fc20024
+28420003
+1440ffd3
+00000000
+3c020000
+34420001
+afc20010
+1000003e
+00000000
+00000000
+afc0002c
+10000028
+00000000
+afc00030
+1000001e
+00000000
+8f836370
+8fc2002c
+00022040
+8fc20030
+00821020
+00021080
+00621020
+8c430000
+8f826368
+8c420000
+2042ffff
+8f846354
+00022880
+8fc2002c
+00a21020
+00022840
+8fc20030
+00a21020
+00021080
+00821020
+8c420000
+10620004
+00000000
+afc00010
+100000a5
+00000000
+8fc20030
+20420001
+afc20030
+8fc20030
+28420002
+1440ffe0
+00000000
+8fc2002c
+20420001
+afc2002c
+8fc2002c
+28420003
+1440ffd6
+00000000
+3c020000
+34420001
+afc20010
+10000093
+00000000
+3c020000
+34420001
+afc20034
+1000000e
+00000000
+8fc20034
+afc2005c
+00000000
+afc00024
+1000ffbc
+00000000
+8fc30010
+3c020000
+34420001
+10620079
+00000000
+8fc20034
+20420001
+afc20034
+8f826368
+8c420000
+2043ffff
+8fc20034
+0043102a
+1440ffed
+00000000
+afc00010
+1000006d
+00000000
+00000000
+8f826350
+8c430000
+3c028000
+34420000
+344200ff
+00621024
+04410005
+00000000
+2042ffff
+3c03ffff
+3463ff00
+00431025
+20420001
+8f83635c
+00021080
+00621020
+8c420000
+afc20010
+8f826350
+8c420000
+20430001
+8f826350
+ac430000
+00000000
+8fc20010
+afc20050
+afc00040
+10000080
+00000000
+afc0003c
+10000014
+00000000
+8fc20038
+00021840
+8fc2003c
+00621020
+00021080
+23c30008
+00621020
+8c43005c
+8f846354
+8fc20038
+00022840
+8fc2003c
+00a21020
+00021080
+00821020
+ac430000
+8fc2003c
+20420001
+afc2003c
+8fc2003c
+28420002
+1440ffea
+00000000
+8fc20038
+20420001
+afc20038
+8fc20038
+28420003
+1440ffe0
+00000000
+8f826354
+3c03ffff
+3463ffff
+ac430018
+8f826354
+ac40001c
+8f826368
+8c420000
+20430001
+8f826368
+ac430000
+8f82635c
+ac400000
+8f826350
+8c430000
+8f826360
+8c420000
+0043102a
+14400052
+00000000
+8fc20060
+14400052
+00000000
+8f826350
+8c430000
+8f826360
+8c420000
+1462ffa8
+00000000
+1000004b
+00000000
+8fc20050
+afc20054
+8fc20040
+afc20058
+00000000
+afc00008
+afc0000c
+afc0001c
+1000fef3
+00000000
+8fc30010
+3c020000
+34420001
+14620030
+00000000
+1000ff7b
+00000000
+00000000
+8fc30010
+3c020000
+34420001
+1462ff43
+00000000
+8f826368
+8c420000
+2043ffff
+8f826368
+ac430000
+10000022
+00000000
+8fc30010
+3c020000
+34420001
+14620005
+00000000
+3c020000
+34420001
+afc20060
+10000027
+00000000
+8f826360
+8c420000
+2043ffff
+3c028000
+34420000
+344200ff
+00621024
+04410005
+00000000
+2042ffff
+3c03ffff
+3463ff00
+00431025
+20420001
+20450000
+8f826368
+8c420000
+2043ffff
+8f84635c
+00051080
+00821020
+ac430000
+8f826360
+8c420000
+20430001
+8f826360
+ac430000
+8fc20040
+20420001
+afc20040
+8fc20040
+28420004
+1440ffbd
+00000000
+1000ffa9
+00000000
+00000000
+10000002
+00000000
+00000000
+8fc20060
+10400049
+00000000
+afc00044
+8f826368
+8c420000
+2042ffff
+afc20048
+10000013
+00000000
+8fc30044
+20620001
+afc20044
+8f846354
+8fc20048
+00021140
+00821020
+8c440018
+8f85634c
+00031080
+00a21020
+ac440000
+8f836354
+8fc20048
+00021140
+00621020
+8c42001c
+afc20048
+8fc20048
+1440ffec
+00000000
+afc0004c
+10000025
+00000000
+8f83634c
+8fc2004c
+00021080
+00621020
+8c420000
+3c030000
+34630001
+10430010
+00000000
+28430002
+10600005
+00000000
+1040000e
+00000000
+10000013
+00000000
+3c030000
+34630002
+1043000c
+00000000
+3c030000
+34630003
+1043000c
+00000000
+1000000b
+00000000
+00000000
+10000008
+00000000
+00000000
+10000005
+00000000
+00000000
+10000002
+00000000
+00000000
+8fc2004c
+20420001
+afc2004c
+8fc3004c
+8fc20044
+0062102a
+1440ffd8
+00000000
+08000244
+00000000
