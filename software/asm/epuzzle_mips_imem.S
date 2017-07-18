@@ -1,6 +1,7 @@
 main:
   move $sp,$0
   move  $fp,$sp
+  move $28,$0
   sw  $0,80($fp)
   sw  $0,96($fp)
   li  $2,2      # 0x2

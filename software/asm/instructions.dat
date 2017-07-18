@@ -8,78 +8,81 @@ TARGET_FIELD [24356, 25456]
 queue [24388, 25436]
 head [25412, 25424]
 tail [25416, 25440]
-$L48 1704
-$L14 588
-$L13 600
-$L12 668
-$L11 680
-$L10 708
-$L35 1092
-$L34 1104
-$L37 1360
-$L36 1284
-$L31 1220
-$L30 1248
-$L33 1896
-$L32 1208
-$L57 1992
-$L58 1776
-$L18 1816
-$L39 1848
-$L56 1936
-$L53 2056
-$L65 2296
-$L62 2388
-$L60 2208
-$L61 2136
-$L42 1456
-$L85 2372
+$L48 1708
+$L14 592
+$L13 604
+$L12 672
+$L11 684
+$L10 712
+$L35 1096
+$L34 1108
+$L37 1364
+$L36 1288
+$L31 1224
+$L30 1252
+$L33 1900
+$L32 1212
+$L57 1996
+$L58 1780
+$L18 1820
+$L39 1852
+$L56 1940
+$L53 2060
+$L65 2300
+$L62 2392
+$L60 2212
+$L61 2140
+$L42 1460
+$L85 2376
 main 0
-$L80 1400
-$L81 1076
-$L82 2336
-$L83 2348
-$L22 1316
-$L23 1040
-$L43 1500
-$L26 1328
-$L27 884
-$L24 1012
-$L25 1000
-$L40 1304
-$L41 1404
-$L28 872
-$L29 1080
-$L44 1636
-$L45 1608
-$L46 1532
-$L47 1520
-$L3 860
-$L2 88
-$L7 100
-$L6 112
-$L5 212
-$L4 240
-end 2408
-$L9 1796
-$L8 308
-$L54 2044
-$L84 2360
-$L50 2096
-$L70 2232
-$L75 780
-$L74 1284
-$L77 1844
-$L76 840
-$L79 2092
-$L78 2080
-$L69 2376
+$L80 1404
+$L81 1080
+$L82 2340
+$L83 2352
+$L22 1320
+$L23 1044
+$L43 1504
+$L26 1332
+$L27 888
+$L24 1016
+$L25 1004
+$L40 1308
+$L41 1408
+$L28 876
+$L29 1084
+$L44 1640
+$L45 1612
+$L46 1536
+$L47 1524
+$L3 864
+$L2 92
+$L7 104
+$L6 116
+$L5 216
+$L4 244
+end 2412
+$L9 1800
+$L8 312
+$L54 2048
+$L84 2364
+$L50 2100
+$L70 2236
+$L75 784
+$L74 1288
+$L77 1848
+$L76 844
+$L79 2096
+$L78 2084
+$L69 2380
 I-Type: ['addi', '$sp', '$0', '0']
 rs: 0, rt: 29, offset: 0
 201d0000
 I-Type: ['addi', '$fp', '$sp', '0']
 rs: 29, rt: 30, offset: 0
 23be0000
+I-Type: ['addi', '$28', '$0', '0']
+rs: 0, rt: 28, offset: 0
+201c0000
 I-Type: ['sw', '$0', '80($fp)']
 rs: 30, rt: 0, offset: 80
 afc00050
@@ -155,14 +158,14 @@ afc00010
 I-Type: ['sw', '$0', '56($fp)']
 rs: 30, rt: 0, offset: 56
 afc00038
-target address: 664, current address: 5c
+target address: 668, current address: 60
 I-Type: ['beq', '$0', '$0', '$L44']
 rs: 0, rt: 0, offset: 385
 10000181
 I-Type: ['sw', '$0', '24($fp)']
 rs: 30, rt: 0, offset: 24
 afc00018
-target address: d4, current address: 68
+target address: d8, current address: 6c
 I-Type: ['beq', '$0', '$0', '$L5']
 rs: 0, rt: 0, offset: 26
 1000001a
@@ -247,7 +250,7 @@ rs: 30, rt: 2, offset: 24
 I-Type: ['slti', '$2', '$2', '2']
 rs: 2, rt: 2, offset: 2
 28420002
-target address: 70, current address: dc
+target address: 74, current address: e0
 I-Type: ['bne', '$2', '$0', '$L6']
 rs: 2, rt: 0, offset: 65508
 1440ffe4
@@ -266,7 +269,7 @@ rs: 30, rt: 2, offset: 20
 I-Type: ['slti', '$2', '$2', '3']
 rs: 2, rt: 2, offset: 3
 28420003
-target address: 64, current address: f8
+target address: 68, current address: fc
 I-Type: ['bne', '$2', '$0', '$L7']
 rs: 2, rt: 0, offset: 65498
 1440ffda
@@ -513,14 +516,14 @@ rs: 2, rt: 2, offset: 1
 I-Type: ['sw', '$2', '16($fp)']
 rs: 30, rt: 2, offset: 16
 afc20010
-target address: 718, current address: 244
+target address: 71c, current address: 248
 I-Type: ['beq', '$0', '$0', '$L18']
 rs: 0, rt: 0, offset: 308
 10000134
 I-Type: ['sw', '$0', '32($fp)']
 rs: 30, rt: 0, offset: 32
 afc00020
-target address: 2a8, current address: 250
+target address: 2ac, current address: 254
 I-Type: ['beq', '$0', '$0', '$L11']
 rs: 0, rt: 0, offset: 21
 10000015
@@ -557,7 +560,7 @@ opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 32
 I-Type: ['lw', '$2', '0($2)']
 rs: 2, rt: 2, offset: 0
 8c420000
-target address: 29c, current address: 284
+target address: 2a0, current address: 288
 I-Type: ['bne', '$2', '$0', '$L12']
 rs: 2, rt: 0, offset: 5
 14400005
@@ -588,7 +591,7 @@ rs: 30, rt: 2, offset: 32
 I-Type: ['slti', '$2', '$2', '2']
 rs: 2, rt: 2, offset: 2
 28420002
-target address: 258, current address: 2b0
+target address: 25c, current address: 2b4
 I-Type: ['bne', '$2', '$0', '$L13']
 rs: 2, rt: 0, offset: 65513
 1440ffe9
@@ -607,7 +610,7 @@ rs: 30, rt: 2, offset: 28
 I-Type: ['slti', '$2', '$2', '3']
 rs: 2, rt: 2, offset: 3
 28420003
-target address: 24c, current address: 2cc
+target address: 250, current address: 2d0
 I-Type: ['bne', '$2', '$0', '$L14']
 rs: 2, rt: 0, offset: 65503
 1440ffdf
@@ -638,14 +641,14 @@ rs: 2, rt: 2, offset: 0
 I-Type: ['sltiu', '$2', '$2', '2']
 rs: 2, rt: 2, offset: 2
 28420002
-target address: 30c, current address: 2f8
+target address: 310, current address: 2fc
 I-Type: ['bne', '$2', '$0', '$L75']
 rs: 2, rt: 0, offset: 4
 14400004
 I-Type: ['sw', '$0', '16($fp)']
 rs: 30, rt: 0, offset: 16
 afc00010
-target address: 718, current address: 304
+target address: 71c, current address: 308
 I-Type: ['beq', '$0', '$0', '$L18']
 rs: 0, rt: 0, offset: 260
 10000104
@@ -676,14 +679,14 @@ rs: 2, rt: 2, offset: 0
 R-Type: ['sltu', '$2', '$2', '3']
 opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 43
 0043102b
-target address: 348, current address: 334
+target address: 34c, current address: 338
 I-Type: ['bne', '$2', '$0', '$L76']
 rs: 2, rt: 0, offset: 4
 14400004
 I-Type: ['sw', '$0', '16($fp)']
 rs: 30, rt: 0, offset: 16
 afc00010
-target address: 718, current address: 340
+target address: 71c, current address: 344
 I-Type: ['beq', '$0', '$0', '$L18']
 rs: 0, rt: 0, offset: 245
 100000f5
@@ -699,14 +702,14 @@ afc2005c
 I-Type: ['sw', '$0', '20($fp)']
 rs: 30, rt: 0, offset: 20
 afc00014
-target address: f0, current address: 360
+target address: f4, current address: 364
 I-Type: ['beq', '$0', '$0', '$L4']
 rs: 0, rt: 0, offset: 65379
 1000ff63
 I-Type: ['sw', '$0', '40($fp)']
 rs: 30, rt: 0, offset: 40
 afc00028
-target address: 3f4, current address: 36c
+target address: 3f8, current address: 370
 I-Type: ['beq', '$0', '$0', '$L24']
 rs: 0, rt: 0, offset: 33
 10000021
@@ -782,14 +785,14 @@ opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
 I-Type: ['lw', '$2', '0($2)']
 rs: 2, rt: 2, offset: 0
 8c420000
-target address: 3e8, current address: 3d4
+target address: 3ec, current address: 3d8
 I-Type: ['beq', '$3', '$2', '$L25']
 rs: 3, rt: 2, offset: 4
 10620004
 I-Type: ['sw', '$0', '16($fp)']
 rs: 30, rt: 0, offset: 16
 afc00010
-target address: 530, current address: 3e0
+target address: 534, current address: 3e4
 I-Type: ['beq', '$0', '$0', '$L26']
 rs: 0, rt: 0, offset: 83
 10000053
@@ -808,7 +811,7 @@ rs: 30, rt: 2, offset: 40
 I-Type: ['slti', '$2', '$2', '2']
 rs: 2, rt: 2, offset: 2
 28420002
-target address: 374, current address: 3fc
+target address: 378, current address: 400
 I-Type: ['bne', '$2', '$0', '$L27']
 rs: 2, rt: 0, offset: 65501
 1440ffdd
@@ -827,7 +830,7 @@ rs: 30, rt: 2, offset: 36
 I-Type: ['slti', '$2', '$2', '3']
 rs: 2, rt: 2, offset: 3
 28420003
-target address: 368, current address: 418
+target address: 36c, current address: 41c
 I-Type: ['bne', '$2', '$0', '$L28']
 rs: 2, rt: 0, offset: 65491
 1440ffd3
@@ -843,21 +846,21 @@ rs: 2, rt: 2, offset: 1
 I-Type: ['sw', '$2', '16($fp)']
 rs: 30, rt: 2, offset: 16
 afc20010
-target address: 530, current address: 42c
+target address: 534, current address: 430
 I-Type: ['beq', '$0', '$0', '$L26']
 rs: 0, rt: 0, offset: 64
 10000040
 I-Type: ['sw', '$0', '44($fp)']
 rs: 30, rt: 0, offset: 44
 afc0002c
-target address: 4e0, current address: 43c
+target address: 4e4, current address: 440
 I-Type: ['beq', '$0', '$0', '$L30']
 rs: 0, rt: 0, offset: 40
 10000028
 I-Type: ['sw', '$0', '48($fp)']
 rs: 30, rt: 0, offset: 48
 afc00030
-target address: 4c4, current address: 448
+target address: 4c8, current address: 44c
 I-Type: ['beq', '$0', '$0', '$L31']
 rs: 0, rt: 0, offset: 30
 1000001e
@@ -924,14 +927,14 @@ opcode: 0, rs: 4, rt: 2, rd: 2, sa: 0, func: 32
 I-Type: ['lw', '$2', '0($2)']
 rs: 2, rt: 2, offset: 0
 8c420000
-target address: 4b8, current address: 4a4
+target address: 4bc, current address: 4a8
 I-Type: ['beq', '$3', '$2', '$L32']
 rs: 3, rt: 2, offset: 4
 10620004
 I-Type: ['sw', '$0', '16($fp)']
 rs: 30, rt: 0, offset: 16
 afc00010
-target address: 768, current address: 4b0
+target address: 76c, current address: 4b4
 I-Type: ['beq', '$0', '$0', '$L33']
 rs: 0, rt: 0, offset: 173
 100000ad
@@ -950,7 +953,7 @@ rs: 30, rt: 2, offset: 48
 I-Type: ['slti', '$2', '$2', '2']
 rs: 2, rt: 2, offset: 2
 28420002
-target address: 450, current address: 4cc
+target address: 454, current address: 4d0
 I-Type: ['bne', '$2', '$0', '$L34']
 rs: 2, rt: 0, offset: 65504
 1440ffe0
@@ -969,7 +972,7 @@ rs: 30, rt: 2, offset: 44
 I-Type: ['slti', '$2', '$2', '3']
 rs: 2, rt: 2, offset: 3
 28420003
-target address: 444, current address: 4e8
+target address: 448, current address: 4ec
 I-Type: ['bne', '$2', '$0', '$L35']
 rs: 2, rt: 0, offset: 65494
 1440ffd6
@@ -985,7 +988,7 @@ rs: 2, rt: 2, offset: 1
 I-Type: ['sw', '$2', '16($fp)']
 rs: 30, rt: 2, offset: 16
 afc20010
-target address: 768, current address: 4fc
+target address: 76c, current address: 500
 I-Type: ['beq', '$0', '$0', '$L33']
 rs: 0, rt: 0, offset: 154
 1000009a
@@ -1001,7 +1004,7 @@ rs: 2, rt: 2, offset: 1
 I-Type: ['sw', '$2', '52($fp)']
 rs: 30, rt: 2, offset: 52
 afc20034
-target address: 550, current address: 510
+target address: 554, current address: 514
 I-Type: ['beq', '$0', '$0', '$L37']
 rs: 0, rt: 0, offset: 15
 1000000f
@@ -1014,7 +1017,7 @@ afc2005c
 I-Type: ['sw', '$0', '36($fp)']
 rs: 30, rt: 0, offset: 36
 afc00024
-target address: 410, current address: 528
+target address: 414, current address: 52c
 I-Type: ['beq', '$0', '$0', '$L23']
 rs: 0, rt: 0, offset: 65465
 1000ffb9
@@ -1030,7 +1033,7 @@ rs: 0, rt: 2, offset: 0
 I-Type: ['ori', '$2', '$2', '1']
 rs: 2, rt: 2, offset: 1
 34420001
-target address: 734, current address: 53c
+target address: 738, current address: 540
 I-Type: ['beq', '$3', '$2', '$L77']
 rs: 3, rt: 2, offset: 125
 1062007d
@@ -1058,14 +1061,14 @@ rs: 30, rt: 2, offset: 52
 R-Type: ['slt', '$2', '$2', '$3']
 opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 42
 0043102a
-target address: 518, current address: 564
+target address: 51c, current address: 568
 I-Type: ['bne', '$2', '$0', '$L40']
 rs: 2, rt: 0, offset: 65516
 1440ffec
 I-Type: ['sw', '$0', '16($fp)']
 rs: 30, rt: 0, offset: 16
 afc00010
-target address: 738, current address: 570
+target address: 73c, current address: 574
 I-Type: ['beq', '$0', '$0', '$L39']
 rs: 0, rt: 0, offset: 113
 10000071
@@ -1090,7 +1093,7 @@ rs: 2, rt: 2, offset: 255
 R-Type: ['and', '$2', '$3', '$2']
 opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 36
 00621024
-target address: 5b0, current address: 594
+target address: 5b4, current address: 598
 I-Type: ['bgez', '$2', '$L42']
 rs: 2, rt: 1, offset: 6
 04410006
@@ -1151,14 +1154,14 @@ afc20050
 I-Type: ['sw', '$0', '64($fp)']
 rs: 30, rt: 0, offset: 64
 afc00040
-target address: 808, current address: 5e8
+target address: 80c, current address: 5ec
 I-Type: ['beq', '$0', '$0', '$L53']
 rs: 0, rt: 0, offset: 135
 10000087
 I-Type: ['sw', '$0', '60($fp)']
 rs: 30, rt: 0, offset: 60
 afc0003c
-target address: 648, current address: 5f4
+target address: 64c, current address: 5f8
 I-Type: ['beq', '$0', '$0', '$L45']
 rs: 0, rt: 0, offset: 20
 10000014
@@ -1225,7 +1228,7 @@ rs: 30, rt: 2, offset: 60
 I-Type: ['slti', '$2', '$2', '2']
 rs: 2, rt: 2, offset: 2
 28420002
-target address: 5fc, current address: 650
+target address: 600, current address: 654
 I-Type: ['bne', '$2', '$0', '$L46']
 rs: 2, rt: 0, offset: 65514
 1440ffea
@@ -1244,7 +1247,7 @@ rs: 30, rt: 2, offset: 56
 I-Type: ['slti', '$2', '$2', '3']
 rs: 2, rt: 2, offset: 3
 28420003
-target address: 5f0, current address: 66c
+target address: 5f4, current address: 670
 I-Type: ['bne', '$2', '$0', '$L47']
 rs: 2, rt: 0, offset: 65504
 1440ffe0
@@ -1305,14 +1308,14 @@ rs: 2, rt: 2, offset: 0
 R-Type: ['slt', '$2', '$2', '$3']
 opcode: 0, rs: 2, rt: 3, rd: 2, sa: 0, func: 42
 0043102a
-target address: 820, current address: 6bc
+target address: 824, current address: 6c0
 I-Type: ['bne', '$2', '$0', '$L78']
 rs: 2, rt: 0, offset: 88
 14400058
 I-Type: ['lw', '$2', '96($fp)']
 rs: 30, rt: 2, offset: 96
 8fc20060
-target address: 82c, current address: 6c8
+target address: 830, current address: 6cc
 I-Type: ['bne', '$2', '$0', '$L79']
 rs: 2, rt: 0, offset: 88
 14400058
@@ -1328,11 +1331,11 @@ rs: 28, rt: 2, offset: 25440
 I-Type: ['lw', '$2', '0($2)']
 rs: 2, rt: 2, offset: 0
 8c420000
-target address: 578, current address: 6e0
+target address: 57c, current address: 6e4
 I-Type: ['bne', '$3', '$2', '$L80']
 rs: 3, rt: 2, offset: 65445
 1462ffa5
-target address: 830, current address: 6e8
+target address: 834, current address: 6ec
 I-Type: ['beq', '$0', '$0', '$L50']
 rs: 0, rt: 0, offset: 81
 10000051
@@ -1357,7 +1360,7 @@ afc0000c
 I-Type: ['sw', '$0', '28($fp)']
 rs: 30, rt: 0, offset: 28
 afc0001c
-target address: 2c4, current address: 710
+target address: 2c8, current address: 714
 I-Type: ['beq', '$0', '$0', '$L10']
 rs: 0, rt: 0, offset: 65260
 1000feec
@@ -1373,11 +1376,11 @@ rs: 0, rt: 2, offset: 0
 I-Type: ['ori', '$2', '$2', '1']
 rs: 2, rt: 2, offset: 1
 34420001
-target address: 7fc, current address: 724
+target address: 800, current address: 728
 I-Type: ['bne', '$3', '$2', '$L54']
 rs: 3, rt: 2, offset: 53
 14620035
-target address: 504, current address: 72c
+target address: 508, current address: 730
 I-Type: ['beq', '$0', '$0', '$L74']
 rs: 0, rt: 0, offset: 65397
 1000ff75
@@ -1393,7 +1396,7 @@ rs: 0, rt: 2, offset: 0
 I-Type: ['ori', '$2', '$2', '1']
 rs: 2, rt: 2, offset: 1
 34420001
-target address: 434, current address: 744
+target address: 438, current address: 748
 I-Type: ['bne', '$3', '$2', '$L81']
 rs: 3, rt: 2, offset: 65339
 1462ff3b
@@ -1412,7 +1415,7 @@ rs: 28, rt: 2, offset: 25448
 I-Type: ['sw', '$3', '0($2)']
 rs: 2, rt: 3, offset: 0
 ac430000
-target address: 7fc, current address: 760
+target address: 800, current address: 764
 I-Type: ['beq', '$0', '$0', '$L54']
 rs: 0, rt: 0, offset: 38
 10000026
@@ -1428,7 +1431,7 @@ rs: 0, rt: 2, offset: 0
 I-Type: ['ori', '$2', '$2', '1']
 rs: 2, rt: 2, offset: 1
 34420001
-target address: 790, current address: 774
+target address: 794, current address: 778
 I-Type: ['bne', '$3', '$2', '$L56']
 rs: 3, rt: 2, offset: 6
 14620006
@@ -1444,7 +1447,7 @@ rs: 2, rt: 2, offset: 1
 I-Type: ['sw', '$2', '96($fp)']
 rs: 30, rt: 2, offset: 96
 afc20060
-target address: 830, current address: 788
+target address: 834, current address: 78c
 I-Type: ['beq', '$0', '$0', '$L50']
 rs: 0, rt: 0, offset: 41
 10000029
@@ -1472,7 +1475,7 @@ rs: 2, rt: 2, offset: 255
 R-Type: ['and', '$2', '$3', '$2']
 opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 36
 00621024
-target address: 7c8, current address: 7ac
+target address: 7cc, current address: 7b0
 I-Type: ['bgez', '$2', '$L57']
 rs: 2, rt: 1, offset: 6
 04410006
@@ -1548,22 +1551,22 @@ rs: 30, rt: 2, offset: 64
 I-Type: ['slti', '$2', '$2', '4']
 rs: 2, rt: 2, offset: 4
 28420004
-target address: 6f0, current address: 810
+target address: 6f4, current address: 814
 I-Type: ['bne', '$2', '$0', '$L58']
 rs: 2, rt: 0, offset: 65463
 1440ffb7
-target address: 6a8, current address: 818
+target address: 6ac, current address: 81c
 I-Type: ['beq', '$0', '$0', '$L48']
 rs: 0, rt: 0, offset: 65443
 1000ffa3
-target address: 830, current address: 824
+target address: 834, current address: 828
 I-Type: ['beq', '$0', '$0', '$L50']
 rs: 0, rt: 0, offset: 2
 10000002
 I-Type: ['lw', '$2', '96($fp)']
 rs: 30, rt: 2, offset: 96
 8fc20060
-target address: 968, current address: 834
+target address: 96c, current address: 838
 I-Type: ['beq', '$2', '$0', 'end']
 rs: 2, rt: 0, offset: 76
 1040004c
@@ -1582,7 +1585,7 @@ rs: 2, rt: 2, offset: 65535
 I-Type: ['sw', '$2', '72($fp)']
 rs: 30, rt: 2, offset: 72
 afc20048
-target address: 8a0, current address: 850
+target address: 8a4, current address: 854
 I-Type: ['beq', '$0', '$0', '$L60']
 rs: 0, rt: 0, offset: 19
 10000013
@@ -1643,14 +1646,14 @@ afc20048
 I-Type: ['lw', '$2', '72($fp)']
 rs: 30, rt: 2, offset: 72
 8fc20048
-target address: 858, current address: 8a4
+target address: 85c, current address: 8a8
 I-Type: ['bne', '$2', '$0', '$L61']
 rs: 2, rt: 0, offset: 65516
 1440ffec
 I-Type: ['sw', '$0', '76($fp)']
 rs: 30, rt: 0, offset: 76
 afc0004c
-target address: 954, current address: 8b0
+target address: 958, current address: 8b4
 I-Type: ['beq', '$0', '$0', '$L62']
 rs: 0, rt: 0, offset: 40
 10000028
@@ -1678,22 +1681,22 @@ rs: 0, rt: 3, offset: 0
 I-Type: ['ori', '$3', '$3', '1']
 rs: 3, rt: 3, offset: 1
 34630001
-target address: 920, current address: 8d4
+target address: 924, current address: 8d8
 I-Type: ['beq', '$2', '$3', '$L82']
 rs: 2, rt: 3, offset: 18
 10430012
 I-Type: ['slti', '$3', '$2', '2']
 rs: 2, rt: 3, offset: 2
 28430002
-target address: 8f8, current address: 8e0
+target address: 8fc, current address: 8e4
 I-Type: ['beq', '$3', '$0', '$L65']
 rs: 3, rt: 0, offset: 5
 10600005
-target address: 92c, current address: 8e8
+target address: 930, current address: 8ec
 I-Type: ['beq', '$2', '$0', '$L83']
 rs: 2, rt: 0, offset: 16
 10400010
-target address: 948, current address: 8f0
+target address: 94c, current address: 8f4
 I-Type: ['beq', '$0', '$0', '$L69']
 rs: 0, rt: 0, offset: 21
 10000015
@@ -1706,7 +1709,7 @@ rs: 0, rt: 3, offset: 0
 I-Type: ['ori', '$3', '$3', '2']
 rs: 3, rt: 3, offset: 2
 34630002
-target address: 938, current address: 900
+target address: 93c, current address: 904
 I-Type: ['beq', '$2', '$3', '$L84']
 rs: 2, rt: 3, offset: 13
 1043000d
@@ -1719,23 +1722,23 @@ rs: 0, rt: 3, offset: 0
 I-Type: ['ori', '$3', '$3', '3']
 rs: 3, rt: 3, offset: 3
 34630003
-target address: 944, current address: 910
+target address: 948, current address: 914
 I-Type: ['beq', '$2', '$3', '$L85']
 rs: 2, rt: 3, offset: 12
 1043000c
-target address: 948, current address: 918
+target address: 94c, current address: 91c
 I-Type: ['beq', '$0', '$0', '$L69']
 rs: 0, rt: 0, offset: 11
 1000000b
-target address: 948, current address: 924
+target address: 94c, current address: 928
 I-Type: ['beq', '$0', '$0', '$L69']
 rs: 0, rt: 0, offset: 8
 10000008
-target address: 948, current address: 930
+target address: 94c, current address: 934
 I-Type: ['beq', '$0', '$0', '$L69']
 rs: 0, rt: 0, offset: 5
 10000005
-target address: 948, current address: 93c
+target address: 94c, current address: 940
 I-Type: ['beq', '$0', '$0', '$L69']
 rs: 0, rt: 0, offset: 2
 10000002
@@ -1757,15 +1760,16 @@ rs: 30, rt: 2, offset: 68
 R-Type: ['slt', '$2', '$3', '$2']
 opcode: 0, rs: 3, rt: 2, rd: 2, sa: 0, func: 42
 0062102a
-target address: 8b8, current address: 960
+target address: 8bc, current address: 964
 I-Type: ['bne', '$2', '$0', '$L70']
 rs: 2, rt: 0, offset: 65493
 1440ffd5
 J-Type: ['j', 'end']
-opcode: 2, instr_index: 602
-0800025a
+opcode: 2, instr_index: 603
+0800025b
 201d0000
 23be0000
+201c0000
 afc00050
 afc00060
 3c020000
@@ -2366,5 +2370,5 @@ afc2004c
 0062102a
 1440ffd5
 00000000
-0800025a
+0800025b
 00000000
