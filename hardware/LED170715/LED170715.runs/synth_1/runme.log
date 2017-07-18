@@ -1,0 +1,331 @@
+
+*** Running vivado
+    with args -log Decoder_7seg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Decoder_7seg.tcl
+
+awk: コマンドライン:1: 警告: コマンドライン引数 `/etc/upstream-release' はディレクトリです: スキップされました
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Decoder_7seg.tcl -notrace
+Command: synth_design -top Decoder_7seg -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25554 
+awk: コマンドライン:1: 警告: コマンドライン引数 `/etc/upstream-release' はディレクトリです: スキップされました
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1126.438 ; gain = 35.996 ; free physical = 1242 ; free virtual = 11606
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Decoder_7seg' [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:22]
+INFO: [Synth 8-638] synthesizing module 'Dir_7seg' [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Dir_7seg.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Dir_7seg' (1#1) [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Dir_7seg.v:1]
+INFO: [Synth 8-638] synthesizing module 'Num_7seg_2' [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Num_7seg_2.v:13]
+INFO: [Synth 8-226] default block is never used [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Num_7seg_2.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Num_7seg_2' (2#1) [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Num_7seg_2.v:13]
+INFO: [Synth 8-638] synthesizing module 'Num_7seg_1' [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Num_7seg_1.v:13]
+INFO: [Synth 8-226] default block is never used [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Num_7seg_1.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Num_7seg_1' (3#1) [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/Num_7seg_1.v:13]
+WARNING: [Synth 8-567] referenced signal 'count' should be on the sensitivity list [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:60]
+WARNING: [Synth 8-567] referenced signal 'seg_d4' should be on the sensitivity list [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:60]
+WARNING: [Synth 8-567] referenced signal 'seg_d3' should be on the sensitivity list [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:60]
+WARNING: [Synth 8-567] referenced signal 'seg_d2' should be on the sensitivity list [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:60]
+WARNING: [Synth 8-567] referenced signal 'seg_d1' should be on the sensitivity list [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:60]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_7seg' (4#1) [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/sources_1/new/source1.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1166.945 ; gain = 76.504 ; free physical = 1253 ; free virtual = 11617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1166.945 ; gain = 76.504 ; free physical = 1254 ; free virtual = 11618
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD0'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD0'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Decoder_7seg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Decoder_7seg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1451.938 ; gain = 0.000 ; free physical = 957 ; free virtual = 11321
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1451.941 ; gain = 361.500 ; free physical = 1091 ; free virtual = 11456
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1451.941 ; gain = 361.500 ; free physical = 1091 ; free virtual = 11456
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1451.941 ; gain = 361.500 ; free physical = 1093 ; free virtual = 11457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1451.941 ; gain = 361.500 ; free physical = 1084 ; free virtual = 11448
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 2     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Decoder_7seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Dir_7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1451.945 ; gain = 361.504 ; free physical = 1069 ; free virtual = 11433
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1451.945 ; gain = 361.504 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1451.945 ; gain = 361.504 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 945 ; free virtual = 11309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     6|
+|3     |LUT3 |     1|
+|4     |LUT4 |    12|
+|5     |LUT5 |     5|
+|6     |LUT6 |    19|
+|7     |FDRE |    12|
+|8     |IBUF |    11|
+|9     |OBUF |    12|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    79|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.969 ; gain = 380.527 ; free physical = 946 ; free virtual = 11310
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1470.969 ; gain = 95.535 ; free physical = 1000 ; free virtual = 11365
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.977 ; gain = 380.527 ; free physical = 1000 ; free virtual = 11365
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+23 Infos, 17 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1470.977 ; gain = 393.117 ; free physical = 968 ; free virtual = 11332
+INFO: [Common 17-1381] The checkpoint '/home/deguchilocal/workspace/iverilog/BASYS3/vivado/LED170715/LED170715.runs/synth_1/Decoder_7seg.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1494.984 ; gain = 0.000 ; free physical = 967 ; free virtual = 11332
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 15 21:45:51 2017...
