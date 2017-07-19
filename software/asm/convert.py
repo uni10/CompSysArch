@@ -64,7 +64,7 @@ class Compile(object):
             "slt": {"opcode": 0b000000, "func": 0b101010, "sa": 0b00000},
             "sltu": {"opcode": 0b000000, "func": 0b101011, "sa": 0b00000},
             "slti": {"opcode": 0b001010},
-            "sltiu": {"opcode": 0b001010},
+            "sltiu": {"opcode": 0b001011},
             "and": {"opcode": 0b000000, "func": 0b100100, "sa": 0b00000},
             "jr": {"opcode": 0b000000, "func": 0b001000, "sa": 0b00000, "rt": 0b00000, "rd": 0b00000},
         }
