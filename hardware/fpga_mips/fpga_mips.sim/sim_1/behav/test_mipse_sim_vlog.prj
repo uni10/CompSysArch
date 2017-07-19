@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../fpga_mips.srcs/sources_1/imports/mips0717/rfile.v" --include "../../../fpga_mips.srcs/sources_1/imports/mips0717"
+verilog xil_defaultlib  "../../../fpga_mips.srcs/sources_1/imports/mips0717/alu.v" --include "../../../fpga_mips.srcs/sources_1/imports/mips0717"
+verilog xil_defaultlib  "../../../fpga_mips.srcs/sources_1/imports/mips0717/mipse.v" --include "../../../fpga_mips.srcs/sources_1/imports/mips0717"
+verilog xil_defaultlib  "../../../fpga_mips.srcs/sources_1/imports/mips0717/imem.v" --include "../../../fpga_mips.srcs/sources_1/imports/mips0717"
+verilog xil_defaultlib  "../../../fpga_mips.srcs/sources_1/imports/mips0717/dmem.v" --include "../../../fpga_mips.srcs/sources_1/imports/mips0717"
+verilog xil_defaultlib  "../../../fpga_mips.srcs/sources_1/imports/mips0717/test_mipse_sim.v" --include "../../../fpga_mips.srcs/sources_1/imports/mips0717"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

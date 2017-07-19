@@ -11,38 +11,82 @@
         <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
       </probeOptions>
       <nets>
-        <net name="ddataout_OBUF[31]"/>
-        <net name="ddataout_OBUF[30]"/>
-        <net name="ddataout_OBUF[29]"/>
-        <net name="ddataout_OBUF[28]"/>
-        <net name="ddataout_OBUF[27]"/>
-        <net name="ddataout_OBUF[26]"/>
-        <net name="ddataout_OBUF[25]"/>
-        <net name="ddataout_OBUF[24]"/>
-        <net name="ddataout_OBUF[23]"/>
-        <net name="ddataout_OBUF[22]"/>
-        <net name="ddataout_OBUF[21]"/>
-        <net name="ddataout_OBUF[20]"/>
-        <net name="ddataout_OBUF[19]"/>
-        <net name="ddataout_OBUF[18]"/>
-        <net name="ddataout_OBUF[17]"/>
-        <net name="ddataout_OBUF[16]"/>
-        <net name="ddataout_OBUF[15]"/>
-        <net name="ddataout_OBUF[14]"/>
-        <net name="ddataout_OBUF[13]"/>
-        <net name="ddataout_OBUF[12]"/>
-        <net name="ddataout_OBUF[11]"/>
-        <net name="ddataout_OBUF[10]"/>
-        <net name="ddataout_OBUF[9]"/>
-        <net name="ddataout_OBUF[8]"/>
-        <net name="ddataout_OBUF[7]"/>
-        <net name="ddataout_OBUF[6]"/>
-        <net name="ddataout_OBUF[5]"/>
-        <net name="ddataout_OBUF[4]"/>
-        <net name="ddataout_OBUF[3]"/>
-        <net name="ddataout_OBUF[2]"/>
-        <net name="ddataout_OBUF[1]"/>
-        <net name="ddataout_OBUF[0]"/>
+        <net name="mipse_1/pc[31]"/>
+        <net name="mipse_1/pc[30]"/>
+        <net name="mipse_1/pc[29]"/>
+        <net name="mipse_1/pc[28]"/>
+        <net name="mipse_1/pc[27]"/>
+        <net name="mipse_1/pc[26]"/>
+        <net name="mipse_1/pc[25]"/>
+        <net name="mipse_1/pc[24]"/>
+        <net name="mipse_1/pc[23]"/>
+        <net name="mipse_1/pc[22]"/>
+        <net name="mipse_1/pc[21]"/>
+        <net name="mipse_1/pc[20]"/>
+        <net name="mipse_1/pc[19]"/>
+        <net name="mipse_1/pc[18]"/>
+        <net name="mipse_1/pc[17]"/>
+        <net name="mipse_1/pc[16]"/>
+        <net name="mipse_1/pc[15]"/>
+        <net name="mipse_1/pc[14]"/>
+        <net name="mipse_1/pc[13]"/>
+        <net name="mipse_1/pc[12]"/>
+        <net name="mipse_1/pc[11]"/>
+        <net name="mipse_1/pc[10]"/>
+        <net name="mipse_1/pc[9]"/>
+        <net name="mipse_1/pc[8]"/>
+        <net name="mipse_1/pc[7]"/>
+        <net name="mipse_1/pc[6]"/>
+        <net name="mipse_1/pc[5]"/>
+        <net name="mipse_1/pc[4]"/>
+        <net name="mipse_1/pc[3]"/>
+        <net name="mipse_1/pc[2]"/>
+        <net name="mipse_1/pc[1]"/>
+        <net name="mipse_1/pc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
+      </probeOptions>
+      <nets>
+        <net name="ddataout[31]"/>
+        <net name="ddataout[30]"/>
+        <net name="ddataout[29]"/>
+        <net name="ddataout[28]"/>
+        <net name="ddataout[27]"/>
+        <net name="ddataout[26]"/>
+        <net name="ddataout[25]"/>
+        <net name="ddataout[24]"/>
+        <net name="ddataout[23]"/>
+        <net name="ddataout[22]"/>
+        <net name="ddataout[21]"/>
+        <net name="ddataout[20]"/>
+        <net name="ddataout[19]"/>
+        <net name="ddataout[18]"/>
+        <net name="ddataout[17]"/>
+        <net name="ddataout[16]"/>
+        <net name="ddataout[15]"/>
+        <net name="ddataout[14]"/>
+        <net name="ddataout[13]"/>
+        <net name="ddataout[12]"/>
+        <net name="ddataout[11]"/>
+        <net name="ddataout[10]"/>
+        <net name="ddataout[9]"/>
+        <net name="ddataout[8]"/>
+        <net name="ddataout[7]"/>
+        <net name="ddataout[6]"/>
+        <net name="ddataout[5]"/>
+        <net name="ddataout[4]"/>
+        <net name="ddataout[3]"/>
+        <net name="ddataout[2]"/>
+        <net name="ddataout[1]"/>
+        <net name="ddataout[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -50,7 +94,7 @@
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT" value="2"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>

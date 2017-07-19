@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../simple/rfile.v" --include "../../../../../simple"
+verilog xil_defaultlib  "../../../../../simple/alu.v" --include "../../../../../simple"
+verilog xil_defaultlib  "../../../../../simple/mipse.v" --include "../../../../../simple"
+verilog xil_defaultlib  "../../../../../simple/imem.v" --include "../../../../../simple"
+verilog xil_defaultlib  "../../../../../simple/dmem.v" --include "../../../../../simple"
+verilog xil_defaultlib  "../../../project_5.srcs/sources_1/new/source1.v" --include "../../../../../simple"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

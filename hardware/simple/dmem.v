@@ -3,7 +3,7 @@ module dmem (
  input clk,
  input [15:0] a,
  output [`DATA_W-1:0] rd,
- input [`DATA_W-1:0] wd,
+  (* mark_debug = "true" *) input [`DATA_W-1:0] wd,
  input  we);
 
 	reg [`DATA_W-1:0] mem[0:`DEPTH-1];

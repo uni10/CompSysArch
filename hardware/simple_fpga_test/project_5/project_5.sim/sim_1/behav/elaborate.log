@@ -5,16 +5,16 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.alu

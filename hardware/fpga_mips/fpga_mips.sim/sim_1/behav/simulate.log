@@ -1,0 +1,143 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+pc:xxxxxxxx idatain:xxxxxxxx
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000000 idatain:201d0000
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000004 idatain:23be0000
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000008 idatain:201c0000
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000000c idatain:afc00050
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000010 idatain:afc00060
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000014 idatain:3c020000
+reg:xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000018 idatain:34420002
+reg:xxxxxxxx xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000001c idatain:afc20064
+reg:xxxxxxxx xxxxxxxx 00000002 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000020 idatain:3c020000
+reg:xxxxxxxx xxxxxxxx 00000002 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000024 idatain:34420004
+reg:xxxxxxxx xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000028 idatain:afc20068
+reg:xxxxxxxx xxxxxxxx 00000004 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000002c idatain:3c020000
+reg:xxxxxxxx xxxxxxxx 00000004 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000030 idatain:34420005
+reg:xxxxxxxx xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000034 idatain:afc2006c
+reg:xxxxxxxx xxxxxxxx 00000005 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000038 idatain:3c020000
+reg:xxxxxxxx xxxxxxxx 00000005 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000003c idatain:34420003
+reg:xxxxxxxx xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000040 idatain:afc20070
+reg:xxxxxxxx xxxxxxxx 00000003 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000044 idatain:3c020000
+reg:xxxxxxxx xxxxxxxx 00000003 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000048 idatain:34420001
+reg:xxxxxxxx xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000004c idatain:afc20074
+reg:xxxxxxxx xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000050 idatain:afc00078
+reg:xxxxxxxx xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000054 idatain:afc00010
+reg:xxxxxxxx xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000058 idatain:00000000
+reg:xxxxxxxx xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000005c idatain:afc00038
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000060 idatain:1000017f
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000660 idatain:8fc20038
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000664 idatain:28420003
+reg:00000000 xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000668 idatain:1440ffe0
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:000005ec idatain:afc0003c
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:000005f0 idatain:10000014
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000644 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000648 idatain:28420002
+reg:00000000 xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000064c idatain:1440ffea
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:000005f8 idatain:8fc20038
+reg:00000000 xxxxxxxx 00000001 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:000005fc idatain:00021840
+reg:00000000 xxxxxxxx 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000600 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000000 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000604 idatain:00621020
+reg:00000000 xxxxxxxx 00000000 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000608 idatain:00021080
+reg:00000000 xxxxxxxx 00000000 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000060c idatain:23c30008
+reg:00000000 xxxxxxxx 00000000 00000000 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000610 idatain:00621020
+reg:00000000 xxxxxxxx 00000000 00000008 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000614 idatain:8c43005c
+reg:00000000 xxxxxxxx 00000008 00000008 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000618 idatain:8f846354
+reg:00000000 xxxxxxxx 00000008 00000002 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000061c idatain:8fc20038
+reg:00000000 xxxxxxxx 00000008 00000002 00000120 xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000620 idatain:00022840
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 xxxxxxxx xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000624 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000628 idatain:00a21020
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000062c idatain:00021080
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000630 idatain:00821020
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000634 idatain:ac430000
+reg:00000000 xxxxxxxx 00000120 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000638 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000120 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000063c idatain:20420001
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000640 idatain:afc2003c
+reg:00000000 xxxxxxxx 00000001 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000644 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000001 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000648 idatain:28420002
+reg:00000000 xxxxxxxx 00000001 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000064c idatain:1440ffea
+reg:00000000 xxxxxxxx 00000001 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:000005f8 idatain:8fc20038
+reg:00000000 xxxxxxxx 00000001 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:000005fc idatain:00021840
+reg:00000000 xxxxxxxx 00000000 00000002 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000600 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000000 00000000 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000604 idatain:00621020
+reg:00000000 xxxxxxxx 00000001 00000000 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000608 idatain:00021080
+reg:00000000 xxxxxxxx 00000001 00000000 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000060c idatain:23c30008
+reg:00000000 xxxxxxxx 00000004 00000000 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000610 idatain:00621020
+reg:00000000 xxxxxxxx 00000004 00000008 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000614 idatain:8c43005c
+reg:00000000 xxxxxxxx 0000000c 00000008 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000618 idatain:8f846354
+reg:00000000 xxxxxxxx 0000000c 00000004 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000061c idatain:8fc20038
+reg:00000000 xxxxxxxx 0000000c 00000004 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000620 idatain:00022840
+reg:00000000 xxxxxxxx 00000000 00000004 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000624 idatain:8fc2003c
+reg:00000000 xxxxxxxx 00000000 00000004 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000628 idatain:00a21020
+reg:00000000 xxxxxxxx 00000001 00000004 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:0000062c idatain:00021080
+reg:00000000 xxxxxxxx 00000001 00000004 00000120 00000000 xxxxxxxx xxxxxxxx | xxxxxxxx
+pc:00000630 idatain:0082

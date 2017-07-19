@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="Z:/Documents/project_5/project_5.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
@@ -11,26 +11,27 @@
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
       <ZoomEndTime time="1024001fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <Cursor1Time time="340000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="146"></NameColumnWidth>
-      <ValueColumnWidth column_width="65"></ValueColumnWidth>
+      <NameColumnWidth column_width="149"></NameColumnWidth>
+      <ValueColumnWidth column_width="157"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
    <wave_markers>
    </wave_markers>
-   <wvobject fp_name="ddataout_OBUF" type="array">
+   <wvobject fp_name="mipse_1/pc" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">ddataout_OBUF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ddataout_OBUF[31:0]</obj_property>
+      <obj_property name="ElementShortName">mipse_1/pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
-   <wvobject fp_name="clkin_IBUF_BUFG" type="logic">
+   <wvobject fp_name="ddataout" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">clkin_IBUF_BUFG</obj_property>
-      <obj_property name="ObjectShortName">clkin_IBUF_BUFG</obj_property>
+      <obj_property name="ElementShortName">ddataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddataout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
    <wvobject fp_name="trigger_OBUF" type="logic">

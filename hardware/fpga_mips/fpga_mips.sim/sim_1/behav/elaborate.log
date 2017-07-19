@@ -1,0 +1,27 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 5386f59678c743c48577d896848db06f --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_mipse_sim_behav xil_defaultlib.test_mipse_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/fpga_mips/fpga_mips.srcs/sources_1/imports/mips0717/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.rfile
+Compiling module xil_defaultlib.mipse
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.test_mipse_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_mipse_sim_behav

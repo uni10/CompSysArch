@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a35t_0" gui_info="dashboard1=hw_ila_1[xc7a35t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a35t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a35t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a35t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7a35t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/test_mipse.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="hw_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="daddr[17:2]" gui_info=""/>
+    <Object name="ddatain[31:0]" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="daddr[17]"/>
+        <net name="daddr[16]"/>
+        <net name="daddr[15]"/>
+        <net name="daddr[14]"/>
+        <net name="daddr[13]"/>
+        <net name="daddr[12]"/>
+        <net name="daddr[11]"/>
+        <net name="daddr[10]"/>
+        <net name="daddr[9]"/>
+        <net name="daddr[8]"/>
+        <net name="daddr[7]"/>
+        <net name="daddr[6]"/>
+        <net name="daddr[5]"/>
+        <net name="daddr[4]"/>
+        <net name="daddr[3]"/>
+        <net name="daddr[2]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="ddatain[31]"/>
+        <net name="ddatain[30]"/>
+        <net name="ddatain[29]"/>
+        <net name="ddatain[28]"/>
+        <net name="ddatain[27]"/>
+        <net name="ddatain[26]"/>
+        <net name="ddatain[25]"/>
+        <net name="ddatain[24]"/>
+        <net name="ddatain[23]"/>
+        <net name="ddatain[22]"/>
+        <net name="ddatain[21]"/>
+        <net name="ddatain[20]"/>
+        <net name="ddatain[19]"/>
+        <net name="ddatain[18]"/>
+        <net name="ddatain[17]"/>
+        <net name="ddatain[16]"/>
+        <net name="ddatain[15]"/>
+        <net name="ddatain[14]"/>
+        <net name="ddatain[13]"/>
+        <net name="ddatain[12]"/>
+        <net name="ddatain[11]"/>
+        <net name="ddatain[10]"/>
+        <net name="ddatain[9]"/>
+        <net name="ddatain[8]"/>
+        <net name="ddatain[7]"/>
+        <net name="ddatain[6]"/>
+        <net name="ddatain[5]"/>
+        <net name="ddatain[4]"/>
+        <net name="ddatain[3]"/>
+        <net name="ddatain[2]"/>
+        <net name="ddatain[1]"/>
+        <net name="ddatain[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="dmem_1/a[15]"/>
+        <net name="dmem_1/a[14]"/>
+        <net name="dmem_1/a[13]"/>
+        <net name="dmem_1/a[12]"/>
+        <net name="dmem_1/a[11]"/>
+        <net name="dmem_1/a[10]"/>
+        <net name="dmem_1/a[9]"/>
+        <net name="dmem_1/a[8]"/>
+        <net name="dmem_1/a[7]"/>
+        <net name="dmem_1/a[6]"/>
+        <net name="dmem_1/a[5]"/>
+        <net name="dmem_1/a[4]"/>
+        <net name="dmem_1/a[3]"/>
+        <net name="dmem_1/a[2]"/>
+        <net name="dmem_1/a[1]"/>
+        <net name="dmem_1/a[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

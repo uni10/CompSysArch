@@ -1,0 +1,651 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jul 20 00:55:20 2017
+# Process ID: 22228
+# Current directory: C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1
+# Command line: vivado.exe -log fpga_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_test.tcl -notrace
+# Log file: C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test.vdi
+# Journal file: C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source fpga_test.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 549 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD0'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD0'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[11]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[10]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[9]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[8]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[7]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[6]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[5]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[4]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[3]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[2]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[11]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[10]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[9]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[8]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[7]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[6]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[5]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[4]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[3]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[2]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DIR[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DIR[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[7]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[6]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[5]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[4]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[3]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[2]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[3]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[2]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DIR[1]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DIR[0]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[4]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[5]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[6]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'NUM[7]'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:105]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'clkin'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clkin'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_reg_n_0'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clkin_IBUF_BUFG'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:120]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'clkin_IBUF_BUFG'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:121]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'clkin_IBUF_BUFG'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:122]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'rst_out_OBUF'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:125]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'rst_out'. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.srcs/constrs_1/new/constr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 524 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 512 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.407 . Memory (MB): peak = 467.285 ; gain = 7.563
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:2.0 for cell dbg_hub_CV.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1050.355 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 17848d52f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:42 . Memory (MB): peak = 1050.355 ; gain = 79.285
+Implement Debug Cores | Checksum: 18057625e
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1066bbd77
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:43 . Memory (MB): peak = 1058.684 ; gain = 87.613
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 105 cells.
+Phase 3 Constant propagation | Checksum: 162d1a10f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:02:43 . Memory (MB): peak = 1058.684 ; gain = 87.613
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 220 unconnected nets.
+INFO: [Opt 31-11] Eliminated 113 unconnected cells.
+Phase 4 Sweep | Checksum: 20dba860b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:02:43 . Memory (MB): peak = 1058.684 ; gain = 87.613
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 BUFG optimization | Checksum: 20dba860b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:02:44 . Memory (MB): peak = 1058.684 ; gain = 87.613
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1058.684 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 20dba860b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:02:44 . Memory (MB): peak = 1058.684 ; gain = 87.613
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: 151b204d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 151b204d1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1327.184 ; gain = 268.500
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 70 Warnings, 72 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:02:56 . Memory (MB): peak = 1327.184 ; gain = 867.461
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test_drc_opted.rpt.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5c4c5d18
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: f3b9855d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: f3b9855d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: f3b9855d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 95963b5e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 95963b5e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a8d1c23b
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 144d338b8
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 144d338b8
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1ac85567a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 15f1c9e5f
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: f041e4a0
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: f041e4a0
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: f041e4a0
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=27.655. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2153ef964
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 2153ef964
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2153ef964
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2153ef964
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1d798156d
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d798156d
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Ending Placer Task | Checksum: 1050dddf8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 70 Warnings, 72 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.562 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1327.184 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1327.184 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 72f5dc79 ConstDB: 0 ShapeSum: 9218017f RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 7146b509
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 7146b509
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 7146b509
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 7146b509
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.184 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 215fc902d
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=27.669 | TNS=0.000  | WHS=-0.164 | THS=-19.347|
+
+Phase 2 Router Initialization | Checksum: 24b9c27e5
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 13a54028b
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 356
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 27288e4ac
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=27.022 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 281730779
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 12cda6c36
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=27.022 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 188c9c46e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 188c9c46e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 188c9c46e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 188c9c46e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 188c9c46e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c05a4d9c
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=27.115 | TNS=0.000  | WHS=0.093  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a52ae4e5
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 1a52ae4e5
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.66866 %
+  Global Horizontal Routing Utilization  = 1.87936 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: d8bb3766
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: d8bb3766
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 102e5510c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=27.115 | TNS=0.000  | WHS=0.093  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 102e5510c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1327.184 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 70 Warnings, 72 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 1327.184 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.729 . Memory (MB): peak = 1327.184 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Shun Kinoshita/Desktop/CompSysArch/hardware/simple_fpga_test/project_5/project_5.runs/impl_1/fpga_test_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file fpga_test_power_routed.rpt -pb fpga_test_power_summary_routed.pb -rpx fpga_test_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+81 Infos, 70 Warnings, 72 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 20 00:59:22 2017...
