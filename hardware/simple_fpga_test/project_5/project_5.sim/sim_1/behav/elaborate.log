@@ -1,0 +1,27 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto ad7410f4f3094d25827f88cc6269e13d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_mipse_behav xil_defaultlib.test_mipse xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/mipse.v" Line 2. Module mipse doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/rfile.v" Line 2. Module rfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/imem.v" Line 2. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "Z:/Documents/CompSysArch/hardware/simple/dmem.v" Line 2. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.rfile
+Compiling module xil_defaultlib.mipse
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.test_mipse
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_mipse_behav

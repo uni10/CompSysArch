@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../CompSysArch/hardware/simple/rfile.v" --include "../../../../CompSysArch/hardware/simple"
+verilog xil_defaultlib  "../../../../CompSysArch/hardware/simple/alu.v" --include "../../../../CompSysArch/hardware/simple"
+verilog xil_defaultlib  "../../../../CompSysArch/hardware/simple/mipse.v" --include "../../../../CompSysArch/hardware/simple"
+verilog xil_defaultlib  "../../../../CompSysArch/hardware/simple/imem.v" --include "../../../../CompSysArch/hardware/simple"
+verilog xil_defaultlib  "../../../../CompSysArch/hardware/simple/dmem.v" --include "../../../../CompSysArch/hardware/simple"
+verilog xil_defaultlib  "../../../../CompSysArch/hardware/simple/test_mipse.v" --include "../../../../CompSysArch/hardware/simple"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
