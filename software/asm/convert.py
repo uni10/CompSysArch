@@ -86,6 +86,7 @@ class Compile(object):
         return inst_l
 
     def insert_instruction(self, b_inst):
+        print("{0:x}: {1}".format(self.counter, b_inst))
         self.instructions.append(b_inst)
         self.counter += 4
 
@@ -100,7 +101,6 @@ class Compile(object):
         print("R-Type: {}".format(inst))
         print("opcode: {}, rs: {}, rt: {}, rd: {}, sa: {}, func: {}".format(opcode, rs, rt, rd, sa, func))
         b_inst = int("{0:06b}{1:05b}{2:05b}{3:05b}{4:05b}{5:06b}".format(opcode, rs, rt, rd, sa, func), 2)
-        print("{0:08x}".format(b_inst))
         self.insert_instruction("{0:08x}".format(b_inst))
 
     def decode_rtype(self, inst):
@@ -142,7 +142,6 @@ class Compile(object):
         print("I-Type: {}".format(inst))
         print("rs: {}, rt: {}, offset: {}".format(rs, rt, offset))
         b_inst = int("{0:06b}{1:05b}{2:05b}{3:016b}".format(opcode, rs, rt, offset), 2)
-        print("{0:08x}".format(b_inst))
         self.insert_instruction("{0:08x}".format(b_inst))
 
     def decode_itype(self, inst):
@@ -186,7 +185,6 @@ class Compile(object):
         print("J-Type: {}".format(inst))
         print("opcode: {}, instr_index: {}".format(opcode, instr_index))
         b_inst = int("{0:06b}{1:026b}".format(opcode, instr_index), 2)
-        print("{0:08x}".format(b_inst))
         self.insert_instruction("{0:08x}".format(b_inst))
 
     def inst_move(self, inst):
