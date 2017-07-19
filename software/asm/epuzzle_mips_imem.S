@@ -1,6 +1,7 @@
 main:
   move $sp,$0
   move  $fp,$sp
+  move $28,$0
   nop
 $L2:
   sw  $0,44($fp)
@@ -429,7 +430,7 @@ $L41:
   lw  $2,%got(head)($28)
   lw  $3,0($2)
   li  $2,-2147483648      # 0xffffffff80000000
-  ori $2,$2,0xff
+  ori $2,$2,255
   and $2,$3,$2
   bgez  $2,$L42
   nop
@@ -599,7 +600,7 @@ $L56:
   lw  $2,0($2)
   addiu $3,$2,-1
   li  $2,-2147483648      # 0xffffffff80000000
-  ori $2,$2,0xff
+  ori $2,$2,255
   and $2,$3,$2
   bgez  $2,$L57
   nop
