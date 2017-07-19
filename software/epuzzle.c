@@ -184,7 +184,7 @@ is_target:
   goto is_target_ret;
 
 is_arrived:
-  for (int i = 1; i < field_length - 1; i++) {
+  for (int i = 0; i < field_length - 1; i++) {
     arg0 = i;
     goto is_equal;
 is_equal_ret:
