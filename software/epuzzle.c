@@ -86,17 +86,17 @@ void output(int index, int cmd)
   }
 }
 */
+int current = 0;
+int finished = 0;
+int init_state[][COLUMN] = {{2, 4}, {5, 3}, {1, 0}};
+int blank_x, blank_y;
+int ret_val = 0;
+int arg0, arg1, arg2, arg3, arg4;
+int *ptr;
 
 int main()
 {
-  int current = 0;
-  volatile int finished = 0;
-  int init_state[][COLUMN] = {{2, 4}, {5, 3}, {1, 0}};
-  int blank_x, blank_y;
-  int ret_val = 0;
-  int arg0, arg1, arg2, arg3, arg4;
-  int *ptr;
-  goto init;
+   goto init;
 
 set_field:
   /*
