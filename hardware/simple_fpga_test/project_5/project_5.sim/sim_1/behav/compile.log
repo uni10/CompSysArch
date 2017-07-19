@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/CompSysArch/hardware/simple/rfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/CompSysArch/hardware/simple/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/CompSysArch/hardware/simple/mipse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mipse
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/CompSysArch/hardware/simple/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/CompSysArch/hardware/simple/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/CompSysArch/hardware/simple/test_mipse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_mipse
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/Documents/project_5/project_5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
