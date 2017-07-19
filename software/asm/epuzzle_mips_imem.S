@@ -221,7 +221,7 @@ $L75:
   lw  $2,12($fp)
   addu  $2,$3,$2
   addiu $2,$2,0
-  sltu  $2,$2,3
+  sltiu  $2,$2,3
   bne $2,$0,$L76
   nop
 
