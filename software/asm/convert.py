@@ -113,11 +113,11 @@ class Compile(object):
             rd = inst_info["rd"]
             sa = inst_info["sa"]
             rs = inst[1]
-        elif "sltu" == inst[0]:
+        elif "sltu" == inst[0] or "slt" == inst[0]:
             sa = inst_info["sa"]
             rd = self.reg[inst[1]]
             rs = self.reg[inst[2]]
-            rt = int(inst[3])
+            rt = self.reg[inst[3]]
         elif "rs" in inst_info:
             rs = inst_info["rs"]
             rd = self.reg[inst[1]]
