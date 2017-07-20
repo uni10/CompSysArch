@@ -2,6 +2,8 @@ main:
   move $sp,$0
   move  $fp,$sp
   move $28,$0
+  li  $21,1
+  li  $22,2
   nop
 $L2:
   sw  $0,44($fp)
@@ -43,8 +45,8 @@ $L6:
   sw  $2,12($fp)
 $L5:
   lw  $2,12($fp)
-  sltiu $2,$2,2
-  bne $2,$0,$L6
+  beq $2,$0,$L6
+  beq $2,$21,$L6
   nop
 
   lw  $2,8($fp)
@@ -52,8 +54,9 @@ $L5:
   sw  $2,8($fp)
 $L4:
   lw  $2,8($fp)
-  sltiu $2,$2,3
-  bne $2,$0,$L7
+  beq $2,$0,$L7
+  beq $2,$21,$L7
+  beq $2,$22,$L7
   nop
 
   lw  $2,%got(arg0)($28)
@@ -188,8 +191,8 @@ $L12:
   sw  $2,20($fp)
 $L11:
   lw  $2,20($fp)
-  sltiu $2,$2,2
-  bne $2,$0,$L13
+  beq $2,$0,$L13
+  beq $2,$21,$L13
   nop
 
   lw  $2,16($fp)
@@ -197,8 +200,9 @@ $L11:
   sw  $2,16($fp)
 $L10:
   lw  $2,16($fp)
-  sltiu $2,$2,3
-  bne $2,$0,$L14
+  beq $2,$0,$L14
+  beq $2,$21,$L14
+  beq $2,$22,$L14
   nop
 
   lw  $2,%got(arg2)($28)
@@ -211,8 +215,8 @@ $L10:
   lw  $2,0($2)
   addu  $2,$3,$2
   addiu $2,$2,0
-  sltiu  $2,$2,2
-  bne $2,$0,$L75
+  beq $2,$0,$L75
+  beq $2,$21,$L75
   nop
 
   lw  $2,%got(ret_val)($28)
@@ -232,8 +236,9 @@ $L75:
   lw  $2,0($2)
   addu  $2,$3,$2
   addiu $2,$2,0
-  sltiu  $2,$2,3
-  bne $2,$0,$L76
+  beq $2,$0,$L76
+  beq $2,$21,$L76
+  beq $2,$22,$L76
   nop
 
   lw  $2,%got(ret_val)($28)
@@ -298,8 +303,8 @@ $L25:
   sw  $2,28($fp)
 $L24:
   lw  $2,28($fp)
-  sltiu $2,$2,2
-  bne $2,$0,$L27
+  beq $2,$0,$L27
+  beq $2,$21,$L27
   nop
 
   lw  $2,24($fp)
@@ -307,8 +312,9 @@ $L24:
   sw  $2,24($fp)
 $L23:
   lw  $2,24($fp)
-  sltiu $2,$2,3
-  bne $2,$0,$L28
+  beq $2,$0,$L28
+  beq $2,$21,$L28
+  beq $2,$22,$L28
   nop
 
   lw  $2,%got(ret_val)($28)
@@ -365,8 +371,8 @@ $L32:
   sw  $2,36($fp)
 $L31:
   lw  $2,36($fp)
-  sltiu $2,$2,2
-  bne $2,$0,$L34
+  beq $2,$0,$L34
+  beq $2,$21,$L34
   nop
 
   lw  $2,32($fp)
@@ -374,8 +380,9 @@ $L31:
   sw  $2,32($fp)
 $L30:
   lw  $2,32($fp)
-  sltiu $2,$2,3
-  bne $2,$0,$L35
+  beq $2,$0,$L35
+  beq $2,$21,$L35
+  beq $2,$22,$L35
   nop
 
   lw  $2,%got(ret_val)($28)
@@ -488,8 +495,8 @@ $L46:
   sw  $2,48($fp)
 $L45:
   lw  $2,48($fp)
-  sltiu $2,$2,2
-  bne $2,$0,$L46
+  beq $2,$0,$L46
+  beq $2,$21,$L46
   nop
 
   lw  $2,44($fp)
@@ -497,8 +504,9 @@ $L45:
   sw  $2,44($fp)
 $L44:
   lw  $2,44($fp)
-  sltiu $2,$2,3
-  bne $2,$0,$L47
+  beq $2,$0,$L47
+  beq $2,$21,$L47
+  beq $2,$22,$L47
   nop
 
   lw  $2,%got(fields)($28)
